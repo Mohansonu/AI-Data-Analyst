@@ -1,0 +1,1837 @@
+
+============================================================
+FILE: .\app\main.py
+============================================================
+
+import streamlit as st
+import pandas as pd
+import plotly.express as px
+
+from app.services.ai_analyst_service import ask_data_analyst
+from app.services.insight_service import generate_insights
+from app.services.visualization_service import create_visualization
+
+
+# ============================================================
+# PAGE CONFIG
+# ============================================================
+
+st.set_page_config(
+    page_title="AI Data Analyst",
+    page_icon="📊",
+    layout="wide"
+)
+
+
+# ============================================================
+# HEADER
+# ============================================================
+
+st.title("📊 AI Data Analyst")
+
+st.markdown(
+    """
+    ### AI-Powered Business Intelligence Platform
+
+    Ask questions about your business data using normal English.
+    The AI generates SQL, executes it against PostgreSQL,
+    creates visualizations, and provides business insights.
+    """
+)
+
+
+# ============================================================
+# USER QUESTION
+# ============================================================
+
+st.divider()
+
+st.subheader("🤖 Ask Your Data Analyst")
+
+question = st.text_area(
+    "Ask a business question",
+    placeholder=(
+        "Example: What are the top 5 products by revenue?"
+    ),
+    height=100
+)
+
+
+# ============================================================
+# ANALYZE BUTTON
+# ============================================================
+
+if st.button(
+    "🚀 Analyze",
+    type="primary",
+    width="stretch"
+):
+
+    if not question.strip():
+
+        st.warning(
+            "Please enter a business question."
+        )
+
+        st.stop()
+
+    try:
+
+        # ====================================================
+        # STEP 1 — AI ANALYSIS
+        # ====================================================
+
+        with st.spinner(
+            "🤖 AI is analyzing your question..."
+        ):
+
+            result = ask_data_analyst(
+                question
+            )
+
+        sql = result["sql"]
+        dataframe = result["result"]
+
+
+        # ====================================================
+        # SQL SECTION
+        # ====================================================
+
+        st.divider()
+
+        st.subheader("🧠 Generated SQL")
+
+        st.code(
+            sql,
+            language="sql"
+        )
+
+
+        # ====================================================
+        # RESULT SECTION
+        # ====================================================
+
+        st.subheader("📊 Query Result")
+
+        if dataframe is None or dataframe.empty:
+
+            st.info(
+                "The query returned no results."
+            )
+
+        else:
+
+            st.dataframe(
+                dataframe,
+                width="stretch"
+            )
+
+            st.caption(
+                f"{len(dataframe):,} rows returned"
+            )
+
+
+        # ====================================================
+        # DOWNLOAD CSV
+        # ====================================================
+
+        if (
+            dataframe is not None
+            and not dataframe.empty
+        ):
+
+            csv_data = dataframe.to_csv(
+                index=False
+            ).encode("utf-8")
+
+            st.download_button(
+                label="⬇️ Download Results as CSV",
+                data=csv_data,
+                file_name="query_results.csv",
+                mime="text/csv",
+                width="stretch"
+            )
+
+
+        # ====================================================
+        # VISUALIZATION
+        # ====================================================
+
+        if (
+            dataframe is not None
+            and not dataframe.empty
+        ):
+
+            st.divider()
+
+            st.subheader(
+                "📈 Automatic Visualization"
+            )
+
+            visualization = create_visualization(
+                dataframe
+            )
+
+            chart_type = visualization["type"]
+
+
+            # ------------------------------------------------
+            # BAR CHART
+            # ------------------------------------------------
+
+            if chart_type == "bar":
+
+                x_column = visualization["x"]
+                y_column = visualization["y"]
+
+                fig = px.bar(
+                    dataframe,
+                    x=x_column,
+                    y=y_column,
+                    title=f"{y_column} by {x_column}",
+                    text_auto=".2s"
+                )
+
+                fig.update_layout(
+                    xaxis_title=x_column.replace(
+                        "_", " "
+                    ).title(),
+
+                    yaxis_title=y_column.replace(
+                        "_", " "
+                    ).title()
+                )
+
+                st.plotly_chart(
+                    fig,
+                    width="stretch"
+                )
+
+
+            # ------------------------------------------------
+            # SCATTER CHART
+            # ------------------------------------------------
+
+            elif chart_type == "scatter":
+
+                x_column = visualization["x"]
+                y_column = visualization["y"]
+
+                fig = px.scatter(
+                    dataframe,
+                    x=x_column,
+                    y=y_column,
+                    title=f"{y_column} vs {x_column}"
+                )
+
+                st.plotly_chart(
+                    fig,
+                    width="stretch"
+                )
+
+
+            # ------------------------------------------------
+            # METRIC
+            # ------------------------------------------------
+
+            elif chart_type == "metric":
+
+                value_column = visualization["value"]
+
+                value = dataframe[
+                    value_column
+                ].iloc[0]
+
+                st.metric(
+                    label=value_column.replace(
+                        "_", " "
+                    ).title(),
+
+                    value=f"{value:,.2f}"
+                )
+
+
+            # ------------------------------------------------
+            # TABLE
+            # ------------------------------------------------
+
+            else:
+
+                st.dataframe(
+                    dataframe,
+                    width="stretch"
+                )
+
+
+            st.caption(
+                f"Visualization type: {chart_type}"
+            )
+
+
+        # ====================================================
+        # AI INSIGHTS
+        # ====================================================
+
+        if (
+            dataframe is not None
+            and not dataframe.empty
+        ):
+
+            st.divider()
+
+            st.subheader(
+                "💡 AI Business Insights"
+            )
+
+            with st.spinner(
+                "Generating business insights..."
+            ):
+
+                insights = generate_insights(
+                    result["question"],
+                    result["sql"],
+                    result["result"]
+                )
+
+
+            # ------------------------------------------------
+            # SUMMARY
+            # ------------------------------------------------
+
+            st.markdown(
+                "### 📌 Summary"
+            )
+
+            st.write(
+                insights["summary"]
+            )
+
+
+            # ------------------------------------------------
+            # KEY FINDINGS
+            # ------------------------------------------------
+
+            st.markdown(
+                "### 🔎 Key Findings"
+            )
+
+            for finding in insights[
+                "key_findings"
+            ]:
+
+                st.markdown(
+                    f"- {finding}"
+                )
+
+
+            # ------------------------------------------------
+            # RECOMMENDATIONS
+            # ------------------------------------------------
+
+            st.markdown(
+                "### 🎯 Recommendations"
+            )
+
+            for recommendation in insights[
+                "recommendations"
+            ]:
+
+                st.markdown(
+                    f"- {recommendation}"
+                )
+
+
+        # ====================================================
+        # SUCCESS MESSAGE
+        # ====================================================
+
+        st.success(
+            "✅ Analysis completed successfully!"
+        )
+
+
+    except Exception as error:
+
+        st.error(
+            f"❌ Analysis failed: {error}"
+        )
+
+        st.exception(error)
+
+============================================================
+FILE: .\app\ui\dashboard.py
+============================================================
+
+import streamlit as st
+import plotly.express as px
+
+from app.services.analytics_service import (
+    get_database_summary,
+    get_revenue_by_category,
+    get_monthly_revenue,
+    get_top_products,
+    get_revenue_by_state,
+)
+
+from app.ui.sql_playground import show_sql_playground
+
+
+# ============================================================
+# PAGE CONFIG
+# ============================================================
+
+st.set_page_config(
+    page_title="AI Data Analyst",
+    page_icon="📊",
+    layout="wide"
+)
+
+
+# ============================================================
+# HEADER
+# ============================================================
+
+st.title("📊 AI Data Analyst")
+
+st.markdown(
+    """
+    ### Business Intelligence Dashboard
+
+    Explore business performance using PostgreSQL analytics
+    and interactive SQL.
+    """
+)
+
+
+# ============================================================
+# DATABASE OVERVIEW
+# ============================================================
+
+st.divider()
+
+st.subheader("📌 Database Overview")
+
+
+try:
+
+    summary = get_database_summary()
+
+    if not summary.empty:
+
+        data = summary.iloc[0]
+
+        col1, col2, col3, col4, col5 = st.columns(5)
+
+
+        with col1:
+
+            st.metric(
+                "Customers",
+                f"{int(data['total_customers']):,}"
+            )
+
+
+        with col2:
+
+            st.metric(
+                "Products",
+                f"{int(data['total_products']):,}"
+            )
+
+
+        with col3:
+
+            st.metric(
+                "Orders",
+                f"{int(data['total_orders']):,}"
+            )
+
+
+        with col4:
+
+            st.metric(
+                "Order Items",
+                f"{int(data['total_order_items']):,}"
+            )
+
+
+        with col5:
+
+            st.metric(
+                "Payments",
+                f"{int(data['total_payments']):,}"
+            )
+
+
+except Exception as error:
+
+    st.error(
+        f"Database summary failed: {error}"
+    )
+
+
+# ============================================================
+# CATEGORY REVENUE
+# ============================================================
+
+st.divider()
+
+st.subheader("💰 Revenue by Category")
+
+
+try:
+
+    category_data = get_revenue_by_category()
+
+
+    if not category_data.empty:
+
+        fig = px.bar(
+            category_data,
+
+            x="category",
+
+            y="revenue",
+
+            title="Revenue by Category",
+
+            text_auto=".2s"
+        )
+
+
+        st.plotly_chart(
+            fig,
+            width="stretch"
+        )
+
+
+except Exception as error:
+
+    st.error(
+        f"Category analysis failed: {error}"
+    )
+
+
+# ============================================================
+# MONTHLY REVENUE
+# ============================================================
+
+st.divider()
+
+st.subheader("📈 Monthly Revenue")
+
+
+try:
+
+    monthly_data = get_monthly_revenue()
+
+
+    if not monthly_data.empty:
+
+        fig = px.line(
+            monthly_data,
+
+            x="month",
+
+            y="revenue",
+
+            markers=True,
+
+            title="Monthly Revenue Trend"
+        )
+
+
+        st.plotly_chart(
+            fig,
+            width="stretch"
+        )
+
+
+except Exception as error:
+
+    st.error(
+        f"Monthly revenue failed: {error}"
+    )
+
+
+# ============================================================
+# TOP PRODUCTS
+# ============================================================
+
+st.divider()
+
+st.subheader("🏆 Top 10 Products")
+
+
+try:
+
+    top_products = get_top_products()
+
+
+    if not top_products.empty:
+
+        for index, row in top_products.iterrows():
+
+            product = row["product_name"]
+
+            units = row["units_sold"]
+
+            revenue = row["revenue"]
+
+
+            st.write(
+                f"**{index + 1}. {product}**  "
+                f"— {int(units):,} units  "
+                f"— Revenue: ₹{float(revenue):,.2f}"
+            )
+
+
+except Exception as error:
+
+    st.error(
+        f"Top products failed: {error}"
+    )
+
+
+# ============================================================
+# STATE REVENUE
+# ============================================================
+
+st.divider()
+
+st.subheader("🌎 Revenue by State")
+
+
+try:
+
+    state_data = get_revenue_by_state()
+
+
+    if not state_data.empty:
+
+        fig = px.bar(
+            state_data,
+
+            x="state",
+
+            y="revenue",
+
+            title="Revenue by State",
+
+            text_auto=".2s"
+        )
+
+
+        st.plotly_chart(
+            fig,
+            width="stretch"
+        )
+
+
+except Exception as error:
+
+    st.error(
+        f"State analysis failed: {error}"
+    )
+
+
+# ============================================================
+# SQL PLAYGROUND
+# ============================================================
+
+show_sql_playground()
+
+============================================================
+FILE: .\app\ui\sql_playground.py
+============================================================
+
+import streamlit as st
+from app.services.sql_service import execute_sql
+
+
+def show_sql_playground():
+
+    st.divider()
+
+    st.header("🔍 SQL Query Playground")
+
+    st.write("Enter a read-only SQL query and execute it.")
+
+    query = st.text_area(
+        "SQL Query",
+        value="SELECT COUNT(*) AS total_customers FROM customers;",
+        height=150,
+        key="sql_input"
+    )
+
+    run = st.button(
+        "▶ Run SQL",
+        key="execute_sql"
+    )
+
+    if run:
+
+        st.write("1️⃣ Button clicked")
+
+        try:
+
+            st.write("2️⃣ Executing SQL...")
+
+            result = execute_sql(query)
+
+            st.write("3️⃣ SQL execution completed")
+
+            st.write(
+                f"4️⃣ Rows returned: {len(result)}"
+            )
+
+            st.write(
+                f"5️⃣ Columns returned: {len(result.columns)}"
+            )
+
+            st.write("6️⃣ Result:")
+
+            # IMPORTANT:
+            # Do NOT use st.dataframe here.
+            # Render the result manually.
+
+            if result.empty:
+
+                st.warning(
+                    "Query executed successfully, "
+                    "but returned no rows."
+                )
+
+            else:
+
+                for column in result.columns:
+
+                    value = result.iloc[0][column]
+
+                    st.metric(
+                        str(column)
+                        .replace("_", " ")
+                        .title(),
+                        str(value)
+                    )
+
+                st.write("7️⃣ Raw result:")
+
+                st.json(
+                    result.to_dict(
+                        orient="records"
+                    )
+                )
+
+        except Exception as error:
+
+            st.error("❌ SQL execution failed")
+
+            st.code(
+                str(error)
+            )
+
+============================================================
+FILE: .\app\services\ai_analyst_service.py
+============================================================
+
+from app.agents.sql_agent import generate_sql
+from app.services.sql_validator import validate_sql
+from app.services.sql_service import execute_sql
+
+
+def ask_data_analyst(question: str):
+
+    # ========================================================
+    # STEP 1 — GENERATE SQL
+    # ========================================================
+
+    sql = generate_sql(question)
+
+
+    # ========================================================
+    # STEP 2 — VALIDATE SQL
+    # ========================================================
+
+    is_valid, message = validate_sql(sql)
+
+    if not is_valid:
+
+        raise ValueError(
+            f"Generated SQL was blocked: {message}"
+        )
+
+
+    # ========================================================
+    # STEP 3 — EXECUTE SQL
+    # ========================================================
+
+    result = execute_sql(sql)
+
+
+    # ========================================================
+    # STEP 4 — RETURN EVERYTHING
+    # ========================================================
+
+    return {
+        "question": question,
+        "sql": sql,
+        "result": result
+    }
+
+============================================================
+FILE: .\app\services\visualization_service.py
+============================================================
+
+import pandas as pd
+
+
+def create_visualization(df: pd.DataFrame) -> dict:
+    """
+    Recommend an appropriate visualization based on
+    the structure of a query result.
+    """
+
+    # =========================================================
+    # 1. EMPTY DATAFRAME
+    # =========================================================
+
+    if df is None or df.empty:
+        return {
+            "type": "none",
+            "reason": "The query returned no data, so no visualization is required."
+        }
+
+    # =========================================================
+    # 2. IDENTIFY COLUMNS
+    # =========================================================
+
+    numeric_columns = df.select_dtypes(
+        include="number"
+    ).columns.tolist()
+
+    categorical_columns = df.select_dtypes(
+        include=["object", "category", "string"]
+    ).columns.tolist()
+
+    # =========================================================
+    # 3. CATEGORY + NUMERIC
+    # =========================================================
+    #
+    # Example:
+    #
+    # category       revenue
+    # Sports         2957138000
+    # Fashion        2920489000
+    #
+    # Recommendation → BAR
+    #
+    # =========================================================
+
+    if len(categorical_columns) >= 1 and len(numeric_columns) >= 1:
+
+        category_column = categorical_columns[0]
+        numeric_column = numeric_columns[0]
+
+        category_name = str(category_column).lower()
+
+        # -----------------------------------------------------
+        # Time-based data → LINE
+        # -----------------------------------------------------
+
+        if any(
+            keyword in category_name
+            for keyword in [
+                "month",
+                "date",
+                "time",
+                "year",
+                "week",
+                "day"
+            ]
+        ):
+
+            return {
+                "type": "line",
+                "x": category_column,
+                "y": numeric_column,
+                "reason": (
+                    "The result contains time-based and numeric values, "
+                    "so a line chart is suitable for showing trends."
+                )
+            }
+
+        # -----------------------------------------------------
+        # Normal categorical data → BAR
+        # -----------------------------------------------------
+
+        return {
+            "type": "bar",
+            "x": category_column,
+            "y": numeric_column,
+            "reason": (
+                "The result contains categorical and numeric values, "
+                "so a bar chart is suitable for comparison."
+            )
+        }
+
+    # =========================================================
+    # 4. TWO OR MORE NUMERIC COLUMNS
+    # =========================================================
+    #
+    # Example:
+    #
+    # quantity    revenue
+    # 10          500
+    # 20          900
+    #
+    # Recommendation → SCATTER
+    #
+    # =========================================================
+
+    if len(numeric_columns) >= 2:
+
+        return {
+            "type": "scatter",
+            "x": numeric_columns[0],
+            "y": numeric_columns[1],
+            "reason": (
+                "The result contains two numeric variables, "
+                "so a scatter plot is suitable for showing their relationship."
+            )
+        }
+
+    # =========================================================
+    # 5. SINGLE NUMERIC COLUMN
+    # =========================================================
+    #
+    # Example:
+    #
+    # total_customers
+    # 10000
+    #
+    # Recommendation → METRIC
+    #
+    # =========================================================
+
+    if len(numeric_columns) == 1:
+
+        return {
+            "type": "metric",
+            "value": numeric_columns[0],
+            "reason": (
+                "The result contains a single numeric value, "
+                "so it is best displayed as a KPI metric."
+            )
+        }
+
+    # =========================================================
+    # 6. FALLBACK
+    # =========================================================
+
+    return {
+        "type": "table",
+        "reason": (
+            "The result structure does not clearly match a chart type, "
+            "so displaying the data as a table is most appropriate."
+        )
+    }
+
+============================================================
+FILE: .\app\services\chart_service.py
+============================================================
+
+import plotly.express as px
+
+
+def render_chart(df, chart_type):
+
+    if df is None or df.empty:
+        return None
+
+    if chart_type == "bar":
+
+        categorical = df.select_dtypes(
+            include=["object", "string"]
+        ).columns
+
+        numeric = df.select_dtypes(
+            include=["number"]
+        ).columns
+
+        if len(categorical) == 0 or len(numeric) == 0:
+            return None
+
+        return px.bar(
+            df,
+            x=categorical[0],
+            y=numeric[0],
+            title="Bar Chart"
+        )
+
+    if chart_type == "line":
+
+        numeric = df.select_dtypes(
+            include=["number"]
+        ).columns
+
+        if len(numeric) < 1:
+            return None
+
+        return px.line(
+            df,
+            y=numeric[0],
+            markers=True,
+            title="Line Chart"
+        )
+
+    if chart_type == "scatter":
+
+        numeric = df.select_dtypes(
+            include=["number"]
+        ).columns
+
+        if len(numeric) < 2:
+            return None
+
+        return px.scatter(
+            df,
+            x=numeric[0],
+            y=numeric[1],
+            title="Scatter Plot"
+        )
+
+    return None
+
+============================================================
+FILE: .\app\services\export_service.py
+============================================================
+
+import pandas as pd
+
+
+def dataframe_to_csv(df: pd.DataFrame) -> bytes:
+    """
+    Convert a DataFrame into CSV bytes
+    suitable for Streamlit download.
+    """
+
+    if df is None:
+        raise ValueError("DataFrame cannot be None")
+
+    return df.to_csv(index=False).encode("utf-8")
+
+
+def dataframe_to_excel(df: pd.DataFrame) -> bytes:
+    """
+    Convert a DataFrame into an Excel file.
+    """
+
+    if df is None:
+        raise ValueError("DataFrame cannot be None")
+
+    import io
+
+    output = io.BytesIO()
+
+    with pd.ExcelWriter(
+        output,
+        engine="openpyxl"
+    ) as writer:
+
+        df.to_excel(
+            writer,
+            index=False,
+            sheet_name="Query Result"
+        )
+
+    return output.getvalue()
+
+============================================================
+FILE: .\app\services\insight_service.py
+============================================================
+
+import os
+import json
+
+from dotenv import load_dotenv
+from google import genai
+
+
+# ============================================================
+# LOAD ENVIRONMENT VARIABLES
+# ============================================================
+
+load_dotenv()
+
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+
+if not GEMINI_API_KEY:
+    raise ValueError(
+        "GEMINI_API_KEY is not configured in .env"
+    )
+
+
+# ============================================================
+# GEMINI CLIENT
+# ============================================================
+
+client = genai.Client(
+    api_key=GEMINI_API_KEY
+)
+
+
+# ============================================================
+# GENERATE BUSINESS INSIGHTS
+# ============================================================
+
+def generate_insights(
+    question: str,
+    sql: str,
+    result
+) -> dict:
+
+    # Convert DataFrame into JSON-compatible records
+    result_json = result.to_dict(
+        orient="records"
+    )
+
+    prompt = f"""
+You are a senior business data analyst working inside an
+AI-powered business intelligence application.
+
+Analyze the user's business question using ONLY the SQL
+query result provided below.
+
+============================================================
+USER QUESTION
+============================================================
+
+{question}
+
+
+============================================================
+SQL QUERY
+============================================================
+
+{sql}
+
+
+============================================================
+QUERY RESULT
+============================================================
+
+{json.dumps(result_json, default=str)}
+
+
+============================================================
+ANALYSIS RULES
+============================================================
+
+1. Never invent numbers, facts, trends, or causes.
+
+2. Use ONLY information available in the QUERY RESULT.
+
+3. Do not assume the currency.
+
+4. Do not add currency symbols such as $, €, or ₹ unless
+   the currency is explicitly known from the data.
+
+5. Format large numbers with commas when appropriate.
+
+6. Keep the language clear and professional.
+
+7. Avoid unnecessary technical terminology.
+
+8. Do not repeat the SQL query in the findings.
+
+9. Recommendations must be directly connected to the
+   available data.
+
+10. Do not claim that something caused a result unless the
+    provided data proves it.
+
+11. If the available result is insufficient to make a strong
+    recommendation, clearly state that additional data is
+    required.
+
+12. Make sure words are separated correctly.
+
+13. Never produce merged words such as:
+    "holdtwo"
+    "preventstockouts"
+
+14. Do not mention information that is not present in the
+    query result.
+
+15. Keep the analysis concise and useful for a business user.
+
+
+============================================================
+OUTPUT FORMAT
+============================================================
+
+Return ONLY valid JSON.
+
+Use exactly this structure:
+
+{{
+    "summary": "2-3 sentence business summary",
+
+    "key_findings": [
+        "Clear finding based directly on the data",
+        "Another important finding",
+        "Another useful finding"
+    ],
+
+    "recommendations": [
+        "Practical recommendation supported by the data",
+        "Another practical recommendation",
+        "Another recommendation or state that additional data is required"
+    ]
+}}
+
+Do not include Markdown.
+Do not include ```json.
+Do not include any explanation outside the JSON.
+"""
+
+
+    # ========================================================
+    # GEMINI REQUEST
+    # ========================================================
+
+    response = client.models.generate_content(
+        model="gemini-3.6-flash",
+        contents=prompt
+    )
+
+
+    # ========================================================
+    # CHECK RESPONSE
+    # ========================================================
+
+    if not response.text:
+
+        raise RuntimeError(
+            "Gemini returned an empty response."
+        )
+
+
+    text = response.text.strip()
+
+
+    # ========================================================
+    # REMOVE MARKDOWN CODE BLOCK IF PRESENT
+    # ========================================================
+
+    if text.startswith("```json"):
+
+        text = text[7:]
+
+
+    elif text.startswith("```"):
+
+        text = text[3:]
+
+
+    if text.endswith("```"):
+
+        text = text[:-3]
+
+
+    text = text.strip()
+
+
+    # ========================================================
+    # PARSE JSON
+    # ========================================================
+
+    try:
+
+        insights = json.loads(text)
+
+    except json.JSONDecodeError as error:
+
+        raise RuntimeError(
+            f"Gemini returned invalid JSON: {error}\n\n"
+            f"Response:\n{text}"
+        )
+
+
+    # ========================================================
+    # VALIDATE STRUCTURE
+    # ========================================================
+
+    required_keys = [
+        "summary",
+        "key_findings",
+        "recommendations"
+    ]
+
+    for key in required_keys:
+
+        if key not in insights:
+
+            raise RuntimeError(
+                f"Missing key in AI response: {key}"
+            )
+
+
+    return insights
+
+============================================================
+FILE: .\app\services\sql_service.py
+============================================================
+
+import os
+
+import pandas as pd
+from sqlalchemy import create_engine
+from dotenv import load_dotenv
+
+
+# ============================================================
+# LOAD ENVIRONMENT VARIABLES
+# ============================================================
+
+load_dotenv()
+
+
+# ============================================================
+# DATABASE CONFIGURATION
+# ============================================================
+
+DB_HOST = os.getenv("DB_HOST")
+DB_PORT = os.getenv("DB_PORT")
+DB_NAME = os.getenv("DB_NAME")
+DB_USER = os.getenv("DB_USER")
+DB_PASSWORD = os.getenv("DB_PASSWORD")
+
+
+# ============================================================
+# VALIDATE DATABASE CONFIGURATION
+# ============================================================
+
+required_variables = {
+    "DB_HOST": DB_HOST,
+    "DB_PORT": DB_PORT,
+    "DB_NAME": DB_NAME,
+    "DB_USER": DB_USER,
+    "DB_PASSWORD": DB_PASSWORD,
+}
+
+missing_variables = [
+    name
+    for name, value in required_variables.items()
+    if not value
+]
+
+if missing_variables:
+    raise ValueError(
+        "Missing database variables: "
+        + ", ".join(missing_variables)
+    )
+
+
+# ============================================================
+# CREATE SQLALCHEMY ENGINE
+# ============================================================
+
+DATABASE_URL = (
+    f"postgresql+psycopg2://"
+    f"{DB_USER}:{DB_PASSWORD}"
+    f"@{DB_HOST}:{DB_PORT}/{DB_NAME}"
+)
+
+engine = create_engine(
+    DATABASE_URL,
+    pool_pre_ping=True
+)
+
+
+# ============================================================
+# EXECUTE SQL
+# ============================================================
+
+def execute_sql(query: str) -> pd.DataFrame:
+
+    if not query or not query.strip():
+        raise ValueError("SQL query cannot be empty.")
+
+    query = query.strip()
+
+    dataframe = pd.read_sql_query(
+        query,
+        engine
+    )
+
+    return dataframe
+
+============================================================
+FILE: .\app\services\sql_validator.py
+============================================================
+
+import re
+
+
+# ============================================================
+# FORBIDDEN SQL OPERATIONS
+# ============================================================
+
+FORBIDDEN_KEYWORDS = [
+    "INSERT",
+    "UPDATE",
+    "DELETE",
+    "DROP",
+    "ALTER",
+    "TRUNCATE",
+    "CREATE",
+    "GRANT",
+    "REVOKE",
+]
+
+
+# ============================================================
+# VALIDATE SQL
+# ============================================================
+
+def validate_sql(sql: str) -> tuple[bool, str]:
+
+    if not sql or not sql.strip():
+
+        return False, "SQL query is empty."
+
+
+    # Remove leading/trailing whitespace
+
+    cleaned_sql = sql.strip()
+
+
+    # Remove trailing semicolon
+
+    cleaned_sql = cleaned_sql.rstrip(";").strip()
+
+
+    # ========================================================
+    # ONLY SELECT / WITH
+    # ========================================================
+
+    if not re.match(
+        r"^(SELECT|WITH)\b",
+        cleaned_sql,
+        re.IGNORECASE
+    ):
+
+        return (
+            False,
+            "Only SELECT or WITH queries are allowed."
+        )
+
+
+    # ========================================================
+    # BLOCK MULTIPLE STATEMENTS
+    # ========================================================
+
+    if ";" in cleaned_sql:
+
+        return (
+            False,
+            "Multiple SQL statements are not allowed."
+        )
+
+
+    # ========================================================
+    # BLOCK DANGEROUS KEYWORDS
+    # ========================================================
+
+    for keyword in FORBIDDEN_KEYWORDS:
+
+        pattern = rf"\b{keyword}\b"
+
+        if re.search(
+            pattern,
+            cleaned_sql,
+            re.IGNORECASE
+        ):
+
+            return (
+                False,
+                f"Forbidden SQL operation detected: {keyword}"
+            )
+
+
+    # ========================================================
+    # VALID
+    # ========================================================
+
+    return True, "SQL query is safe."
+
+============================================================
+FILE: .\app\database\connection.py
+============================================================
+
+import os
+
+from dotenv import load_dotenv
+from sqlalchemy import create_engine
+
+
+load_dotenv()
+
+
+DB_HOST = os.getenv("DB_HOST", "localhost")
+DB_PORT = os.getenv("DB_PORT", "5432")
+DB_NAME = os.getenv("DB_NAME")
+DB_USER = os.getenv("DB_USER")
+DB_PASSWORD = os.getenv("DB_PASSWORD")
+
+
+if not DB_NAME:
+    raise ValueError("DB_NAME is missing from .env")
+
+if not DB_USER:
+    raise ValueError("DB_USER is missing from .env")
+
+if not DB_PASSWORD:
+    raise ValueError("DB_PASSWORD is missing from .env")
+
+
+DATABASE_URL = (
+    f"postgresql+psycopg2://"
+    f"{DB_USER}:{DB_PASSWORD}"
+    f"@{DB_HOST}:{DB_PORT}/{DB_NAME}"
+)
+
+
+engine = create_engine(
+    DATABASE_URL,
+    pool_pre_ping=True
+)
+
+
+def get_engine():
+    return engine
+
+============================================================
+FILE: .\app\agents\sql_agent.py
+============================================================
+
+import os
+
+from dotenv import load_dotenv
+from google import genai
+
+
+# ============================================================
+# LOAD ENVIRONMENT VARIABLES
+# ============================================================
+
+load_dotenv()
+
+API_KEY = os.getenv("GEMINI_API_KEY")
+
+if not API_KEY:
+    raise ValueError(
+        "GEMINI_API_KEY is not configured in .env"
+    )
+
+
+# ============================================================
+# GEMINI CLIENT
+# ============================================================
+
+client = genai.Client(
+    api_key=API_KEY
+)
+
+
+# ============================================================
+# DATABASE SCHEMA
+# ============================================================
+
+DATABASE_SCHEMA = """
+
+PostgreSQL Database Schema
+
+TABLE: customers
+
+Columns:
+- customer_id
+- customer_name
+- email
+- phone
+- city
+- state
+- signup_date
+
+
+TABLE: products
+
+Columns:
+- product_id
+- product_name
+- category
+- price
+- stock
+
+
+TABLE: orders
+
+Columns:
+- order_id
+- customer_id
+- order_date
+- status
+- total_amount
+
+
+TABLE: order_items
+
+Columns:
+- order_item_id
+- order_id
+- product_id
+- quantity
+- unit_price
+- discount
+
+
+TABLE: payments
+
+Columns:
+- payment_id
+- order_id
+- payment_date
+- payment_method
+- amount
+- payment_status
+
+"""
+
+
+# ============================================================
+# AI INSTRUCTIONS
+# ============================================================
+
+SYSTEM_INSTRUCTION = f"""
+
+You are an expert PostgreSQL Data Analyst.
+
+Your task is to convert a user's business question
+into a valid PostgreSQL SELECT query.
+
+{DATABASE_SCHEMA}
+
+IMPORTANT RULES:
+
+1. Return ONLY SQL.
+2. Do not return markdown.
+3. Do not return explanations.
+4. Only SELECT and WITH queries are allowed.
+5. Never use INSERT.
+6. Never use UPDATE.
+7. Never use DELETE.
+8. Never use DROP.
+9. Never use ALTER.
+10. Never use TRUNCATE.
+11. Never modify database data.
+12. Use only tables and columns from the schema.
+13. Use valid PostgreSQL syntax.
+
+REVENUE CALCULATION:
+
+For order_items, revenue should normally be calculated as:
+
+quantity * unit_price * (1 - discount / 100.0)
+
+COMPLETED ORDERS:
+
+When analyzing actual sales revenue, normally use:
+
+orders.status = 'Completed'
+
+RANKINGS:
+
+Use ORDER BY and LIMIT when the user asks for
+top, highest, lowest, best, or worst results.
+
+"""
+
+
+# ============================================================
+# GENERATE SQL
+# ============================================================
+
+def generate_sql(question: str) -> str:
+
+    if not question or not question.strip():
+
+        raise ValueError(
+            "Question cannot be empty."
+        )
+
+
+    prompt = f"""
+{SYSTEM_INSTRUCTION}
+
+USER QUESTION:
+
+{question}
+
+Generate the PostgreSQL SQL query now.
+"""
+
+
+    # ========================================================
+    # GEMINI 3.6 FLASH
+    # ========================================================
+
+    response = client.models.generate_content(
+
+        model="gemini-3.6-flash",
+
+        contents=prompt
+    )
+
+
+    if not response.text:
+
+        raise RuntimeError(
+            "Gemini returned an empty response."
+        )
+
+
+    sql = response.text.strip()
+
+
+    # ========================================================
+    # REMOVE MARKDOWN CODE FENCES
+    # ========================================================
+
+    if sql.startswith("```sql"):
+
+        sql = sql[6:]
+
+
+    if sql.startswith("```"):
+
+        sql = sql[3:]
+
+
+    if sql.endswith("```"):
+
+        sql = sql[:-3]
+
+
+    return sql.strip()
+
+============================================================
+FILE: .\app\utils\result_renderer.py
+============================================================
+
+import streamlit as st
+
+
+def render_sql_result(result):
+
+    if result is None:
+
+        st.warning("No result returned.")
+
+        return
+
+
+    if result.empty:
+
+        st.info("Query executed successfully, but returned 0 rows.")
+
+        return
+
+
+    # ========================================================
+    # RESULT INFORMATION
+    # ========================================================
+
+    rows = result.shape[0]
+    columns = result.shape[1]
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+
+        st.metric(
+            "Rows",
+            f"{rows:,}"
+        )
+
+    with col2:
+
+        st.metric(
+            "Columns",
+            f"{columns:,}"
+        )
+
+
+    st.divider()
+
+    st.subheader("📊 Query Result")
+
+
+    # ========================================================
+    # SINGLE VALUE
+    # ========================================================
+
+    if rows == 1 and columns == 1:
+
+        column_name = str(result.columns[0])
+
+        value = result.iloc[0, 0]
+
+        st.metric(
+            column_name.replace("_", " ").title(),
+            str(value)
+        )
+
+        return
+
+
+    # ========================================================
+    # MULTIPLE RESULTS
+    # ========================================================
+
+    records = result.to_dict(
+        orient="records"
+    )
+
+
+    for row_number, record in enumerate(
+        records,
+        start=1
+    ):
+
+        with st.expander(
+            f"Row {row_number}"
+        ):
+
+            for column, value in record.items():
+
+                st.write(
+                    f"**{column}:** {value}"
+                )
+
+
+    # ========================================================
+    # DOWNLOAD
+    # ========================================================
+
+    csv_data = result.to_csv(
+        index=False
+    )
+
+    st.download_button(
+        label="⬇️ Download CSV",
+        data=csv_data,
+        file_name="sql_result.csv",
+        mime="text/csv"
+    )

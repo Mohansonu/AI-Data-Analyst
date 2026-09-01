@@ -1,0 +1,1001 @@
+product_id,product_name,category,subcategory,price,cost
+1,Headphones Product 1,Electronics,Headphones,149130.53,83729.93
+2,Monitors Product 2,Electronics,Monitors,47942.6,33910.57
+3,Headphones Product 3,Electronics,Headphones,96639.35,72933.87
+4,Laptops Product 4,Electronics,Laptops,55491.53,42098.68
+5,Smartphones Product 5,Electronics,Smartphones,99636.45,80739.03
+6,Headphones Product 6,Electronics,Headphones,57326.6,42184.45
+7,Headphones Product 7,Electronics,Headphones,85508.26,47815.38
+8,Smartphones Product 8,Electronics,Smartphones,25437.57,20857.03
+9,Laptops Product 9,Electronics,Laptops,116823.35,76261.05
+10,Tablets Product 10,Electronics,Tablets,40467.87,24473.62
+11,Monitors Product 11,Electronics,Monitors,59158.05,43071.7
+12,Laptops Product 12,Electronics,Laptops,21311.02,17004.93
+13,Monitors Product 13,Electronics,Monitors,44336.33,32874.96
+14,Laptops Product 14,Electronics,Laptops,102623.78,79205.87
+15,Tablets Product 15,Electronics,Tablets,118493.4,94687.19
+16,Laptops Product 16,Electronics,Laptops,129983.93,79078.37
+17,Monitors Product 17,Electronics,Monitors,140200.09,91418.28
+18,Laptops Product 18,Electronics,Laptops,39331.04,29708.34
+19,Tablets Product 19,Electronics,Tablets,28234.29,21978.97
+20,Headphones Product 20,Electronics,Headphones,26931.42,22447.54
+21,Headphones Product 21,Electronics,Headphones,25401.6,18356.04
+22,Headphones Product 22,Electronics,Headphones,141925.89,87496.69
+23,Laptops Product 23,Electronics,Laptops,51695.76,37861.01
+24,Tablets Product 24,Electronics,Tablets,15602.44,12608.88
+25,Monitors Product 25,Electronics,Monitors,16199.73,12363.38
+26,Tablets Product 26,Electronics,Tablets,55060.89,46002.74
+27,Headphones Product 27,Electronics,Headphones,77984.57,65263.55
+28,Monitors Product 28,Electronics,Monitors,48859.14,35812.05
+29,Headphones Product 29,Electronics,Headphones,116018.59,73810.03
+30,Tablets Product 30,Electronics,Tablets,33863.74,20597.55
+31,Monitors Product 31,Electronics,Monitors,18260.67,13743.49
+32,Monitors Product 32,Electronics,Monitors,123701.99,70801.19
+33,Smartphones Product 33,Electronics,Smartphones,137107.9,100047.68
+34,Laptops Product 34,Electronics,Laptops,7319.41,5170.89
+35,Tablets Product 35,Electronics,Tablets,87421.95,55140.53
+36,Smartphones Product 36,Electronics,Smartphones,13175.72,8686.32
+37,Headphones Product 37,Electronics,Headphones,46344.8,30011.68
+38,Headphones Product 38,Electronics,Headphones,16396.14,13088.71
+39,Laptops Product 39,Electronics,Laptops,16351.17,12568.81
+40,Tablets Product 40,Electronics,Tablets,93021.12,57146.62
+41,Headphones Product 41,Electronics,Headphones,71535.59,57497.63
+42,Monitors Product 42,Electronics,Monitors,14877.47,11747.86
+43,Headphones Product 43,Electronics,Headphones,127778.43,72033.51
+44,Monitors Product 44,Electronics,Monitors,40083.44,32226.35
+45,Smartphones Product 45,Electronics,Smartphones,42736.78,33374.34
+46,Smartphones Product 46,Electronics,Smartphones,5568.27,3653.66
+47,Headphones Product 47,Electronics,Headphones,57624.98,40842.49
+48,Smartphones Product 48,Electronics,Smartphones,104503.01,73895.78
+49,Monitors Product 49,Electronics,Monitors,9303.31,7161.23
+50,Laptops Product 50,Electronics,Laptops,113737.39,62785.08
+51,Tablets Product 51,Electronics,Tablets,19727.45,15849.24
+52,Monitors Product 52,Electronics,Monitors,83803.38,65374.66
+53,Headphones Product 53,Electronics,Headphones,24669.59,14581.08
+54,Tablets Product 54,Electronics,Tablets,83743.77,68993.8
+55,Headphones Product 55,Electronics,Headphones,62587.64,52364.81
+56,Monitors Product 56,Electronics,Monitors,76113.98,59954.12
+57,Headphones Product 57,Electronics,Headphones,80975.56,51327.28
+58,Laptops Product 58,Electronics,Laptops,20991.39,15991.88
+59,Monitors Product 59,Electronics,Monitors,50791.61,39223.34
+60,Tablets Product 60,Electronics,Tablets,81340.01,53022.37
+61,Monitors Product 61,Electronics,Monitors,63468.1,41832.65
+62,Tablets Product 62,Electronics,Tablets,118204.89,94856.22
+63,Tablets Product 63,Electronics,Tablets,26912.93,15842.81
+64,Monitors Product 64,Electronics,Monitors,136599.87,114783.55
+65,Headphones Product 65,Electronics,Headphones,147812.3,82422.91
+66,Smartphones Product 66,Electronics,Smartphones,132408.75,74527.92
+67,Tablets Product 67,Electronics,Tablets,56063.79,34696.31
+68,Laptops Product 68,Electronics,Laptops,11190.4,6948.41
+69,Smartphones Product 69,Electronics,Smartphones,119957.02,97230.63
+70,Smartphones Product 70,Electronics,Smartphones,31489.09,20379.52
+71,Headphones Product 71,Electronics,Headphones,5358.26,3275.12
+72,Headphones Product 72,Electronics,Headphones,83465.24,50466.82
+73,Smartphones Product 73,Electronics,Smartphones,42801.25,27192.01
+74,Monitors Product 74,Electronics,Monitors,78861.35,52436.51
+75,Monitors Product 75,Electronics,Monitors,93108.35,71229.87
+76,Laptops Product 76,Electronics,Laptops,75087.79,60453.38
+77,Laptops Product 77,Electronics,Laptops,63633.93,52158.23
+78,Headphones Product 78,Electronics,Headphones,107988.31,68874.99
+79,Headphones Product 79,Electronics,Headphones,22710.79,12534.3
+80,Tablets Product 80,Electronics,Tablets,126940.7,107320.36
+81,Laptops Product 81,Electronics,Laptops,137910.39,87762.58
+82,Smartphones Product 82,Electronics,Smartphones,79016.4,62550.6
+83,Laptops Product 83,Electronics,Laptops,106222.6,84162.16
+84,Smartphones Product 84,Electronics,Smartphones,110635.81,67170.0
+85,Smartphones Product 85,Electronics,Smartphones,19206.42,14058.6
+86,Smartphones Product 86,Electronics,Smartphones,94148.72,69408.35
+87,Smartphones Product 87,Electronics,Smartphones,56760.3,31356.35
+88,Smartphones Product 88,Electronics,Smartphones,78082.71,52675.41
+89,Headphones Product 89,Electronics,Headphones,24274.57,18576.44
+90,Headphones Product 90,Electronics,Headphones,51947.56,36869.99
+91,Headphones Product 91,Electronics,Headphones,60782.6,46307.22
+92,Headphones Product 92,Electronics,Headphones,26788.09,16185.35
+93,Tablets Product 93,Electronics,Tablets,72167.91,46638.85
+94,Tablets Product 94,Electronics,Tablets,84437.58,53169.42
+95,Laptops Product 95,Electronics,Laptops,57022.77,46121.23
+96,Smartphones Product 96,Electronics,Smartphones,49017.51,36056.47
+97,Monitors Product 97,Electronics,Monitors,122555.2,98836.33
+98,Headphones Product 98,Electronics,Headphones,57547.19,43005.21
+99,Laptops Product 99,Electronics,Laptops,109514.57,73128.21
+100,Monitors Product 100,Electronics,Monitors,130393.84,99814.75
+101,Smartphones Product 101,Electronics,Smartphones,96919.42,58409.91
+102,Headphones Product 102,Electronics,Headphones,103216.18,62909.89
+103,Laptops Product 103,Electronics,Laptops,138891.51,103699.02
+104,Laptops Product 104,Electronics,Laptops,143516.64,118806.83
+105,Tablets Product 105,Electronics,Tablets,27513.85,16413.59
+106,Monitors Product 106,Electronics,Monitors,136473.34,83825.96
+107,Headphones Product 107,Electronics,Headphones,132269.34,110656.87
+108,Headphones Product 108,Electronics,Headphones,119970.62,89638.94
+109,Monitors Product 109,Electronics,Monitors,11581.82,7423.48
+110,Monitors Product 110,Electronics,Monitors,82733.64,51372.33
+111,Laptops Product 111,Electronics,Laptops,48967.85,32275.09
+112,Laptops Product 112,Electronics,Laptops,118465.95,95567.63
+113,Monitors Product 113,Electronics,Monitors,30717.02,22017.45
+114,Tablets Product 114,Electronics,Tablets,40236.71,23604.74
+115,Headphones Product 115,Electronics,Headphones,110646.11,90149.13
+116,Laptops Product 116,Electronics,Laptops,24485.78,16354.65
+117,Laptops Product 117,Electronics,Laptops,141302.18,101923.12
+118,Tablets Product 118,Electronics,Tablets,129855.35,93922.13
+119,Headphones Product 119,Electronics,Headphones,91798.56,70456.21
+120,Laptops Product 120,Electronics,Laptops,134022.8,97981.69
+121,Monitors Product 121,Electronics,Monitors,65987.76,39991.12
+122,Laptops Product 122,Electronics,Laptops,66189.21,39622.64
+123,Tablets Product 123,Electronics,Tablets,37199.46,30515.53
+124,Headphones Product 124,Electronics,Headphones,114033.92,93872.61
+125,Smartphones Product 125,Electronics,Smartphones,32371.31,24679.1
+126,Tablets Product 126,Electronics,Tablets,20999.82,17542.64
+127,Monitors Product 127,Electronics,Monitors,36681.17,21816.93
+128,Smartphones Product 128,Electronics,Smartphones,20467.03,13493.75
+129,Smartphones Product 129,Electronics,Smartphones,82332.53,49562.53
+130,Smartphones Product 130,Electronics,Smartphones,40017.14,28662.8
+131,Monitors Product 131,Electronics,Monitors,121681.68,91967.54
+132,Headphones Product 132,Electronics,Headphones,77938.01,54694.92
+133,Monitors Product 133,Electronics,Monitors,65923.98,49777.83
+134,Tablets Product 134,Electronics,Tablets,100201.98,65853.67
+135,Laptops Product 135,Electronics,Laptops,95722.84,63971.93
+136,Smartphones Product 136,Electronics,Smartphones,119864.2,99099.43
+137,Smartphones Product 137,Electronics,Smartphones,30538.68,19344.39
+138,Tablets Product 138,Electronics,Tablets,35672.21,23770.37
+139,Smartphones Product 139,Electronics,Smartphones,122256.51,98606.68
+140,Monitors Product 140,Electronics,Monitors,48313.9,33243.08
+141,Tablets Product 141,Electronics,Tablets,125327.06,75058.55
+142,Laptops Product 142,Electronics,Laptops,130839.39,94355.46
+143,Smartphones Product 143,Electronics,Smartphones,3719.23,2212.07
+144,Monitors Product 144,Electronics,Monitors,25371.77,21009.31
+145,Monitors Product 145,Electronics,Monitors,112466.96,84260.53
+146,Smartphones Product 146,Electronics,Smartphones,45627.76,31637.86
+147,Monitors Product 147,Electronics,Monitors,29169.84,21399.7
+148,Laptops Product 148,Electronics,Laptops,136774.67,98883.27
+149,Headphones Product 149,Electronics,Headphones,12672.38,9580.73
+150,Headphones Product 150,Electronics,Headphones,14211.51,11940.86
+151,Laptops Product 151,Electronics,Laptops,59853.58,44290.88
+152,Laptops Product 152,Electronics,Laptops,17599.27,10510.66
+153,Headphones Product 153,Electronics,Headphones,61693.69,47861.84
+154,Laptops Product 154,Electronics,Laptops,8309.47,6080.46
+155,Smartphones Product 155,Electronics,Smartphones,17655.3,11736.8
+156,Smartphones Product 156,Electronics,Smartphones,19686.52,11894.83
+157,Smartphones Product 157,Electronics,Smartphones,92740.94,51895.53
+158,Laptops Product 158,Electronics,Laptops,108533.0,81238.61
+159,Monitors Product 159,Electronics,Monitors,114064.81,94641.94
+160,Laptops Product 160,Electronics,Laptops,138844.8,107470.31
+161,Laptops Product 161,Electronics,Laptops,5842.35,4215.64
+162,Headphones Product 162,Electronics,Headphones,57228.46,35053.61
+163,Smartphones Product 163,Electronics,Smartphones,99152.48,68078.39
+164,Tablets Product 164,Electronics,Tablets,116564.32,67734.23
+165,Tablets Product 165,Electronics,Tablets,26667.73,15388.08
+166,Smartphones Product 166,Electronics,Smartphones,118538.6,89486.27
+167,Monitors Product 167,Electronics,Monitors,21349.5,13901.66
+168,Smartphones Product 168,Electronics,Smartphones,86591.5,56110.58
+169,Laptops Product 169,Electronics,Laptops,22774.17,14484.69
+170,Laptops Product 170,Electronics,Laptops,2862.1,2281.01
+171,Laptops Product 171,Electronics,Laptops,105183.67,69423.13
+172,Tablets Product 172,Electronics,Tablets,108319.66,86860.87
+173,Smartphones Product 173,Electronics,Smartphones,121626.55,93749.13
+174,Smartphones Product 174,Electronics,Smartphones,120862.71,74256.29
+175,Monitors Product 175,Electronics,Monitors,89551.55,52697.59
+176,Monitors Product 176,Electronics,Monitors,74634.74,41431.73
+177,Smartphones Product 177,Electronics,Smartphones,34560.83,23712.89
+178,Laptops Product 178,Electronics,Laptops,41536.65,28126.9
+179,Tablets Product 179,Electronics,Tablets,82589.34,58794.67
+180,Headphones Product 180,Electronics,Headphones,46249.69,38258.02
+181,Laptops Product 181,Electronics,Laptops,126997.41,79729.89
+182,Smartphones Product 182,Electronics,Smartphones,133248.91,104408.03
+183,Smartphones Product 183,Electronics,Smartphones,21384.62,14852.81
+184,Smartphones Product 184,Electronics,Smartphones,63542.23,41845.53
+185,Laptops Product 185,Electronics,Laptops,72052.78,51680.47
+186,Tablets Product 186,Electronics,Tablets,9328.25,6807.01
+187,Smartphones Product 187,Electronics,Smartphones,66634.25,51072.77
+188,Smartphones Product 188,Electronics,Smartphones,64853.92,52440.18
+189,Smartphones Product 189,Electronics,Smartphones,62027.47,36533.95
+190,Tablets Product 190,Electronics,Tablets,79797.77,66515.09
+191,Smartphones Product 191,Electronics,Smartphones,51555.83,32393.48
+192,Laptops Product 192,Electronics,Laptops,124216.82,93825.26
+193,Smartphones Product 193,Electronics,Smartphones,33508.99,25570.69
+194,Tablets Product 194,Electronics,Tablets,5147.73,2921.82
+195,Smartphones Product 195,Electronics,Smartphones,92535.74,76100.85
+196,Headphones Product 196,Electronics,Headphones,143501.38,103224.63
+197,Headphones Product 197,Electronics,Headphones,55474.35,45373.18
+198,Tablets Product 198,Electronics,Tablets,93549.09,61860.87
+199,Monitors Product 199,Electronics,Monitors,101657.15,86348.79
+200,Tablets Product 200,Electronics,Tablets,42971.03,34507.95
+201,Kitchen Product 201,Home,Kitchen,37916.8,30427.23
+202,Kitchen Product 202,Home,Kitchen,125564.5,78519.23
+203,Appliances Product 203,Home,Appliances,708.98,399.32
+204,Furniture Product 204,Home,Furniture,115442.78,91104.87
+205,Furniture Product 205,Home,Furniture,6097.94,3402.61
+206,Appliances Product 206,Home,Appliances,83210.35,48271.42
+207,Appliances Product 207,Home,Appliances,41642.65,34686.78
+208,Appliances Product 208,Home,Appliances,24532.59,17292.63
+209,Furniture Product 209,Home,Furniture,77672.73,61648.91
+210,Home Decor Product 210,Home,Home Decor,67329.85,40023.53
+211,Furniture Product 211,Home,Furniture,130304.36,75896.36
+212,Home Decor Product 212,Home,Home Decor,105734.27,72854.78
+213,Kitchen Product 213,Home,Kitchen,76401.95,51386.12
+214,Furniture Product 214,Home,Furniture,37201.5,25616.35
+215,Kitchen Product 215,Home,Kitchen,50021.25,42049.49
+216,Home Decor Product 216,Home,Home Decor,54359.83,38552.44
+217,Home Decor Product 217,Home,Home Decor,73957.36,45102.77
+218,Appliances Product 218,Home,Appliances,26494.6,20168.2
+219,Furniture Product 219,Home,Furniture,2909.21,1979.8
+220,Home Decor Product 220,Home,Home Decor,79894.25,56600.02
+221,Home Decor Product 221,Home,Home Decor,67188.93,51132.28
+222,Home Decor Product 222,Home,Home Decor,74577.27,45594.2
+223,Furniture Product 223,Home,Furniture,50264.28,42721.0
+224,Kitchen Product 224,Home,Kitchen,91162.31,54421.65
+225,Appliances Product 225,Home,Appliances,138318.8,110862.41
+226,Appliances Product 226,Home,Appliances,65690.29,39064.31
+227,Home Decor Product 227,Home,Home Decor,87896.53,62176.67
+228,Kitchen Product 228,Home,Kitchen,105011.74,72720.74
+229,Furniture Product 229,Home,Furniture,8919.86,5617.74
+230,Appliances Product 230,Home,Appliances,64006.86,41167.96
+231,Home Decor Product 231,Home,Home Decor,94137.6,52479.83
+232,Furniture Product 232,Home,Furniture,119326.98,67440.42
+233,Appliances Product 233,Home,Appliances,100080.52,58776.99
+234,Home Decor Product 234,Home,Home Decor,5891.41,4564.12
+235,Home Decor Product 235,Home,Home Decor,87959.02,62729.15
+236,Furniture Product 236,Home,Furniture,123135.95,88519.51
+237,Home Decor Product 237,Home,Home Decor,86253.08,55591.33
+238,Furniture Product 238,Home,Furniture,47704.89,28700.99
+239,Home Decor Product 239,Home,Home Decor,91700.59,64240.92
+240,Home Decor Product 240,Home,Home Decor,97093.63,70818.15
+241,Appliances Product 241,Home,Appliances,139410.38,93195.85
+242,Appliances Product 242,Home,Appliances,95940.57,71418.93
+243,Kitchen Product 243,Home,Kitchen,69648.19,47479.53
+244,Furniture Product 244,Home,Furniture,122105.7,81159.55
+245,Home Decor Product 245,Home,Home Decor,15577.7,12811.45
+246,Furniture Product 246,Home,Furniture,22521.45,15663.37
+247,Furniture Product 247,Home,Furniture,72907.7,52588.72
+248,Kitchen Product 248,Home,Kitchen,35224.84,21214.46
+249,Home Decor Product 249,Home,Home Decor,65702.99,40294.37
+250,Home Decor Product 250,Home,Home Decor,87554.73,72109.28
+251,Appliances Product 251,Home,Appliances,121109.91,69044.6
+252,Home Decor Product 252,Home,Home Decor,25021.87,16995.76
+253,Kitchen Product 253,Home,Kitchen,4238.15,2925.09
+254,Appliances Product 254,Home,Appliances,123026.12,87614.91
+255,Kitchen Product 255,Home,Kitchen,16121.97,10853.67
+256,Kitchen Product 256,Home,Kitchen,99215.17,74191.04
+257,Home Decor Product 257,Home,Home Decor,14533.18,12051.88
+258,Furniture Product 258,Home,Furniture,35511.05,26821.63
+259,Appliances Product 259,Home,Appliances,135154.62,110723.27
+260,Furniture Product 260,Home,Furniture,146408.89,122801.3
+261,Home Decor Product 261,Home,Home Decor,139192.16,97777.66
+262,Furniture Product 262,Home,Furniture,145585.08,120605.99
+263,Home Decor Product 263,Home,Home Decor,45825.88,27104.73
+264,Furniture Product 264,Home,Furniture,67858.31,55240.27
+265,Home Decor Product 265,Home,Home Decor,78435.36,60491.99
+266,Kitchen Product 266,Home,Kitchen,85791.82,58519.12
+267,Home Decor Product 267,Home,Home Decor,65818.88,36428.13
+268,Kitchen Product 268,Home,Kitchen,9538.66,5319.79
+269,Furniture Product 269,Home,Furniture,62992.5,40696.9
+270,Furniture Product 270,Home,Furniture,124372.95,75114.92
+271,Kitchen Product 271,Home,Kitchen,57223.41,32934.27
+272,Appliances Product 272,Home,Appliances,13998.11,10419.99
+273,Furniture Product 273,Home,Furniture,140142.06,98557.63
+274,Appliances Product 274,Home,Appliances,101248.77,73620.92
+275,Kitchen Product 275,Home,Kitchen,90105.29,61005.1
+276,Kitchen Product 276,Home,Kitchen,69664.85,54035.33
+277,Appliances Product 277,Home,Appliances,99788.14,56381.06
+278,Furniture Product 278,Home,Furniture,88449.6,54732.72
+279,Furniture Product 279,Home,Furniture,39020.12,30714.35
+280,Appliances Product 280,Home,Appliances,17140.2,11623.54
+281,Appliances Product 281,Home,Appliances,134968.17,100240.6
+282,Kitchen Product 282,Home,Kitchen,73279.77,55125.27
+283,Kitchen Product 283,Home,Kitchen,50196.05,33290.83
+284,Furniture Product 284,Home,Furniture,116920.89,80449.97
+285,Appliances Product 285,Home,Appliances,27504.27,20408.16
+286,Appliances Product 286,Home,Appliances,105391.05,66914.04
+287,Appliances Product 287,Home,Appliances,57744.48,36067.0
+288,Home Decor Product 288,Home,Home Decor,140352.81,95270.43
+289,Home Decor Product 289,Home,Home Decor,68123.05,43852.04
+290,Furniture Product 290,Home,Furniture,66758.78,39780.54
+291,Home Decor Product 291,Home,Home Decor,15600.79,9246.62
+292,Home Decor Product 292,Home,Home Decor,87125.61,54274.67
+293,Appliances Product 293,Home,Appliances,41500.02,29631.58
+294,Furniture Product 294,Home,Furniture,75529.17,54544.23
+295,Kitchen Product 295,Home,Kitchen,40107.96,26873.9
+296,Kitchen Product 296,Home,Kitchen,92227.81,75082.69
+297,Kitchen Product 297,Home,Kitchen,147756.36,98783.48
+298,Kitchen Product 298,Home,Kitchen,148592.1,115287.94
+299,Appliances Product 299,Home,Appliances,90410.79,51574.38
+300,Furniture Product 300,Home,Furniture,93598.89,53259.92
+301,Home Decor Product 301,Home,Home Decor,11355.8,9648.04
+302,Furniture Product 302,Home,Furniture,88098.74,68453.3
+303,Kitchen Product 303,Home,Kitchen,53854.74,41826.14
+304,Kitchen Product 304,Home,Kitchen,149787.27,121618.25
+305,Appliances Product 305,Home,Appliances,16461.68,10107.52
+306,Appliances Product 306,Home,Appliances,134198.04,87566.73
+307,Kitchen Product 307,Home,Kitchen,6855.49,4293.96
+308,Furniture Product 308,Home,Furniture,60271.06,47248.15
+309,Furniture Product 309,Home,Furniture,136528.46,89848.68
+310,Home Decor Product 310,Home,Home Decor,112646.33,78703.47
+311,Home Decor Product 311,Home,Home Decor,18948.03,10974.86
+312,Home Decor Product 312,Home,Home Decor,97647.78,79281.46
+313,Home Decor Product 313,Home,Home Decor,41257.93,32441.5
+314,Appliances Product 314,Home,Appliances,60489.09,34415.5
+315,Appliances Product 315,Home,Appliances,134517.38,111569.71
+316,Furniture Product 316,Home,Furniture,115928.26,68169.66
+317,Home Decor Product 317,Home,Home Decor,89303.71,64474.63
+318,Furniture Product 318,Home,Furniture,82141.65,68746.63
+319,Furniture Product 319,Home,Furniture,129984.92,89496.89
+320,Kitchen Product 320,Home,Kitchen,14805.65,8496.75
+321,Home Decor Product 321,Home,Home Decor,62230.81,50054.56
+322,Furniture Product 322,Home,Furniture,118155.35,94751.18
+323,Kitchen Product 323,Home,Kitchen,137891.77,101760.96
+324,Home Decor Product 324,Home,Home Decor,82023.48,60282.37
+325,Kitchen Product 325,Home,Kitchen,104922.45,76019.55
+326,Appliances Product 326,Home,Appliances,46948.88,32958.91
+327,Home Decor Product 327,Home,Home Decor,103396.76,83753.41
+328,Home Decor Product 328,Home,Home Decor,51240.66,32197.87
+329,Home Decor Product 329,Home,Home Decor,120595.82,68111.33
+330,Furniture Product 330,Home,Furniture,92170.46,70668.43
+331,Kitchen Product 331,Home,Kitchen,9070.64,6859.54
+332,Appliances Product 332,Home,Appliances,149204.2,93091.33
+333,Appliances Product 333,Home,Appliances,133406.33,75153.99
+334,Furniture Product 334,Home,Furniture,10836.43,6215.58
+335,Furniture Product 335,Home,Furniture,34292.26,24992.27
+336,Appliances Product 336,Home,Appliances,31309.09,20172.96
+337,Appliances Product 337,Home,Appliances,146386.88,108953.64
+338,Furniture Product 338,Home,Furniture,77345.77,48570.95
+339,Home Decor Product 339,Home,Home Decor,90044.23,59761.89
+340,Furniture Product 340,Home,Furniture,7658.01,5576.83
+341,Home Decor Product 341,Home,Home Decor,121106.94,77461.7
+342,Home Decor Product 342,Home,Home Decor,27085.45,17280.39
+343,Appliances Product 343,Home,Appliances,149796.41,113054.72
+344,Home Decor Product 344,Home,Home Decor,117891.91,91032.36
+345,Appliances Product 345,Home,Appliances,64871.6,43667.54
+346,Home Decor Product 346,Home,Home Decor,118439.93,74455.99
+347,Furniture Product 347,Home,Furniture,123082.65,102086.95
+348,Home Decor Product 348,Home,Home Decor,63711.53,42002.22
+349,Appliances Product 349,Home,Appliances,51185.54,41856.42
+350,Appliances Product 350,Home,Appliances,117442.77,75463.61
+351,Home Decor Product 351,Home,Home Decor,144724.25,87946.94
+352,Furniture Product 352,Home,Furniture,63945.17,39822.17
+353,Home Decor Product 353,Home,Home Decor,38935.85,26138.84
+354,Appliances Product 354,Home,Appliances,117556.88,94784.52
+355,Kitchen Product 355,Home,Kitchen,115632.58,75271.28
+356,Home Decor Product 356,Home,Home Decor,8412.6,5627.58
+357,Home Decor Product 357,Home,Home Decor,90666.47,59305.58
+358,Furniture Product 358,Home,Furniture,1670.67,1385.95
+359,Appliances Product 359,Home,Appliances,24291.54,14721.19
+360,Kitchen Product 360,Home,Kitchen,23077.73,13946.18
+361,Appliances Product 361,Home,Appliances,64398.84,52446.82
+362,Appliances Product 362,Home,Appliances,46799.25,27625.64
+363,Home Decor Product 363,Home,Home Decor,92106.99,61439.33
+364,Furniture Product 364,Home,Furniture,12136.04,7697.64
+365,Furniture Product 365,Home,Furniture,14117.33,11621.61
+366,Home Decor Product 366,Home,Home Decor,80151.31,56516.36
+367,Appliances Product 367,Home,Appliances,149008.01,82227.95
+368,Furniture Product 368,Home,Furniture,16519.67,12003.9
+369,Appliances Product 369,Home,Appliances,72335.69,50516.37
+370,Kitchen Product 370,Home,Kitchen,29623.81,16996.35
+371,Home Decor Product 371,Home,Home Decor,66780.02,52467.6
+372,Furniture Product 372,Home,Furniture,139668.51,88264.79
+373,Kitchen Product 373,Home,Kitchen,149134.14,100302.34
+374,Home Decor Product 374,Home,Home Decor,127955.45,94888.97
+375,Appliances Product 375,Home,Appliances,11698.11,8997.41
+376,Kitchen Product 376,Home,Kitchen,8304.64,5884.91
+377,Kitchen Product 377,Home,Kitchen,110391.74,90007.84
+378,Home Decor Product 378,Home,Home Decor,34428.0,22506.13
+379,Appliances Product 379,Home,Appliances,129999.84,92259.19
+380,Appliances Product 380,Home,Appliances,83249.91,70105.65
+381,Kitchen Product 381,Home,Kitchen,55463.82,34909.93
+382,Kitchen Product 382,Home,Kitchen,46671.51,27397.19
+383,Kitchen Product 383,Home,Kitchen,75668.36,61563.4
+384,Home Decor Product 384,Home,Home Decor,119598.31,100939.12
+385,Home Decor Product 385,Home,Home Decor,7358.22,5538.87
+386,Appliances Product 386,Home,Appliances,38393.36,28635.55
+387,Home Decor Product 387,Home,Home Decor,97935.39,63810.96
+388,Kitchen Product 388,Home,Kitchen,130519.59,104892.46
+389,Furniture Product 389,Home,Furniture,16977.13,14147.71
+390,Kitchen Product 390,Home,Kitchen,140217.82,118542.62
+391,Home Decor Product 391,Home,Home Decor,115531.71,84850.3
+392,Appliances Product 392,Home,Appliances,102421.16,75406.25
+393,Furniture Product 393,Home,Furniture,67777.29,55601.18
+394,Appliances Product 394,Home,Appliances,114694.34,71439.53
+395,Home Decor Product 395,Home,Home Decor,96866.22,72994.07
+396,Kitchen Product 396,Home,Kitchen,73546.0,41127.77
+397,Appliances Product 397,Home,Appliances,102856.92,81863.24
+398,Appliances Product 398,Home,Appliances,53238.44,29482.63
+399,Furniture Product 399,Home,Furniture,120239.06,68558.08
+400,Appliances Product 400,Home,Appliances,144358.73,115199.78
+401,Footwear Product 401,Fashion,Footwear,49544.01,36692.42
+402,Men Clothing Product 402,Fashion,Men Clothing,58175.97,49350.62
+403,Women Clothing Product 403,Fashion,Women Clothing,48952.46,34932.26
+404,Women Clothing Product 404,Fashion,Women Clothing,40234.77,32917.61
+405,Footwear Product 405,Fashion,Footwear,127211.24,103591.8
+406,Men Clothing Product 406,Fashion,Men Clothing,5653.86,4671.5
+407,Men Clothing Product 407,Fashion,Men Clothing,77350.92,59138.38
+408,Accessories Product 408,Fashion,Accessories,66249.08,46476.84
+409,Men Clothing Product 409,Fashion,Men Clothing,126431.26,82635.74
+410,Women Clothing Product 410,Fashion,Women Clothing,42044.46,26333.2
+411,Footwear Product 411,Fashion,Footwear,39469.42,26770.1
+412,Women Clothing Product 412,Fashion,Women Clothing,122971.55,100062.25
+413,Men Clothing Product 413,Fashion,Men Clothing,71424.18,52558.36
+414,Accessories Product 414,Fashion,Accessories,105775.15,75707.65
+415,Men Clothing Product 415,Fashion,Men Clothing,96375.51,71826.09
+416,Footwear Product 416,Fashion,Footwear,36366.26,26501.07
+417,Women Clothing Product 417,Fashion,Women Clothing,80633.64,67579.34
+418,Footwear Product 418,Fashion,Footwear,131157.78,101070.49
+419,Accessories Product 419,Fashion,Accessories,148229.35,104992.05
+420,Women Clothing Product 420,Fashion,Women Clothing,132754.44,103455.57
+421,Men Clothing Product 421,Fashion,Men Clothing,46119.44,38997.91
+422,Accessories Product 422,Fashion,Accessories,86942.64,51283.42
+423,Accessories Product 423,Fashion,Accessories,15966.72,12804.09
+424,Women Clothing Product 424,Fashion,Women Clothing,38292.83,23732.57
+425,Men Clothing Product 425,Fashion,Men Clothing,129318.63,109396.93
+426,Accessories Product 426,Fashion,Accessories,106657.75,64262.24
+427,Women Clothing Product 427,Fashion,Women Clothing,135712.42,108501.06
+428,Women Clothing Product 428,Fashion,Women Clothing,88981.22,53283.75
+429,Women Clothing Product 429,Fashion,Women Clothing,35968.59,28332.63
+430,Women Clothing Product 430,Fashion,Women Clothing,146375.15,123774.7
+431,Accessories Product 431,Fashion,Accessories,4803.51,3967.63
+432,Women Clothing Product 432,Fashion,Women Clothing,141572.11,101928.29
+433,Women Clothing Product 433,Fashion,Women Clothing,77707.04,54737.24
+434,Men Clothing Product 434,Fashion,Men Clothing,106840.1,76616.51
+435,Women Clothing Product 435,Fashion,Women Clothing,25417.15,14903.04
+436,Men Clothing Product 436,Fashion,Men Clothing,2530.95,1566.67
+437,Men Clothing Product 437,Fashion,Men Clothing,2736.73,2073.07
+438,Accessories Product 438,Fashion,Accessories,69357.98,46041.26
+439,Men Clothing Product 439,Fashion,Men Clothing,136533.1,95897.7
+440,Accessories Product 440,Fashion,Accessories,107315.43,62941.66
+441,Men Clothing Product 441,Fashion,Men Clothing,122729.13,74472.68
+442,Accessories Product 442,Fashion,Accessories,119589.88,76134.41
+443,Women Clothing Product 443,Fashion,Women Clothing,134691.84,85772.96
+444,Footwear Product 444,Fashion,Footwear,97586.38,72442.86
+445,Men Clothing Product 445,Fashion,Men Clothing,88568.01,68776.17
+446,Accessories Product 446,Fashion,Accessories,41671.63,32708.54
+447,Women Clothing Product 447,Fashion,Women Clothing,29489.62,18955.9
+448,Footwear Product 448,Fashion,Footwear,124859.01,98267.99
+449,Men Clothing Product 449,Fashion,Men Clothing,846.39,651.72
+450,Men Clothing Product 450,Fashion,Men Clothing,68719.5,53290.53
+451,Women Clothing Product 451,Fashion,Women Clothing,825.19,656.2
+452,Footwear Product 452,Fashion,Footwear,141535.72,118288.35
+453,Accessories Product 453,Fashion,Accessories,65798.97,37660.69
+454,Men Clothing Product 454,Fashion,Men Clothing,135470.03,76381.14
+455,Accessories Product 455,Fashion,Accessories,145874.88,109483.85
+456,Accessories Product 456,Fashion,Accessories,40520.28,23183.59
+457,Accessories Product 457,Fashion,Accessories,137446.14,87928.04
+458,Men Clothing Product 458,Fashion,Men Clothing,106431.13,81017.92
+459,Women Clothing Product 459,Fashion,Women Clothing,148021.2,81482.07
+460,Accessories Product 460,Fashion,Accessories,81385.58,47217.59
+461,Footwear Product 461,Fashion,Footwear,115932.16,80089.43
+462,Men Clothing Product 462,Fashion,Men Clothing,55282.45,39720.96
+463,Women Clothing Product 463,Fashion,Women Clothing,64655.51,46194.45
+464,Footwear Product 464,Fashion,Footwear,83227.98,55211.46
+465,Accessories Product 465,Fashion,Accessories,24148.05,17678.3
+466,Men Clothing Product 466,Fashion,Men Clothing,79334.79,56484.84
+467,Men Clothing Product 467,Fashion,Men Clothing,71030.02,60269.11
+468,Accessories Product 468,Fashion,Accessories,117303.92,67073.72
+469,Men Clothing Product 469,Fashion,Men Clothing,55838.06,40617.08
+470,Women Clothing Product 470,Fashion,Women Clothing,54644.3,43888.55
+471,Accessories Product 471,Fashion,Accessories,134549.79,74945.86
+472,Women Clothing Product 472,Fashion,Women Clothing,19237.68,16024.61
+473,Women Clothing Product 473,Fashion,Women Clothing,64912.46,49363.5
+474,Footwear Product 474,Fashion,Footwear,68346.45,57343.88
+475,Women Clothing Product 475,Fashion,Women Clothing,57207.02,36659.27
+476,Men Clothing Product 476,Fashion,Men Clothing,83128.41,45866.38
+477,Footwear Product 477,Fashion,Footwear,140198.29,116676.32
+478,Accessories Product 478,Fashion,Accessories,54372.68,38232.1
+479,Men Clothing Product 479,Fashion,Men Clothing,69247.43,47578.21
+480,Men Clothing Product 480,Fashion,Men Clothing,100743.34,59578.7
+481,Footwear Product 481,Fashion,Footwear,57948.96,35085.98
+482,Men Clothing Product 482,Fashion,Men Clothing,14756.83,11095.55
+483,Women Clothing Product 483,Fashion,Women Clothing,42265.53,30962.27
+484,Accessories Product 484,Fashion,Accessories,141012.82,95990.63
+485,Women Clothing Product 485,Fashion,Women Clothing,24659.0,18024.44
+486,Accessories Product 486,Fashion,Accessories,50339.83,36561.34
+487,Accessories Product 487,Fashion,Accessories,8293.17,6320.56
+488,Footwear Product 488,Fashion,Footwear,108234.61,71427.53
+489,Women Clothing Product 489,Fashion,Women Clothing,16053.8,11495.57
+490,Footwear Product 490,Fashion,Footwear,56115.41,44894.11
+491,Men Clothing Product 491,Fashion,Men Clothing,48048.38,37662.76
+492,Women Clothing Product 492,Fashion,Women Clothing,732.06,529.57
+493,Women Clothing Product 493,Fashion,Women Clothing,126731.24,83661.71
+494,Men Clothing Product 494,Fashion,Men Clothing,106632.9,59225.89
+495,Men Clothing Product 495,Fashion,Men Clothing,9786.39,6554.82
+496,Footwear Product 496,Fashion,Footwear,61678.31,51513.22
+497,Accessories Product 497,Fashion,Accessories,26000.06,20752.84
+498,Footwear Product 498,Fashion,Footwear,127188.46,87887.33
+499,Women Clothing Product 499,Fashion,Women Clothing,75613.87,62446.68
+500,Footwear Product 500,Fashion,Footwear,133147.4,108600.83
+501,Footwear Product 501,Fashion,Footwear,1057.01,609.56
+502,Women Clothing Product 502,Fashion,Women Clothing,24389.39,15329.84
+503,Accessories Product 503,Fashion,Accessories,36283.46,21438.99
+504,Accessories Product 504,Fashion,Accessories,11151.45,9283.35
+505,Footwear Product 505,Fashion,Footwear,1235.18,703.77
+506,Footwear Product 506,Fashion,Footwear,141462.78,105028.21
+507,Men Clothing Product 507,Fashion,Men Clothing,13992.58,10106.96
+508,Men Clothing Product 508,Fashion,Men Clothing,91679.64,73632.7
+509,Men Clothing Product 509,Fashion,Men Clothing,147163.92,109943.39
+510,Footwear Product 510,Fashion,Footwear,28133.69,16156.09
+511,Men Clothing Product 511,Fashion,Men Clothing,111657.07,69029.06
+512,Accessories Product 512,Fashion,Accessories,8270.04,5961.49
+513,Women Clothing Product 513,Fashion,Women Clothing,6864.37,4727.58
+514,Accessories Product 514,Fashion,Accessories,89169.17,67246.54
+515,Men Clothing Product 515,Fashion,Men Clothing,143560.07,90001.79
+516,Men Clothing Product 516,Fashion,Men Clothing,131625.31,95059.9
+517,Footwear Product 517,Fashion,Footwear,84397.62,54703.89
+518,Footwear Product 518,Fashion,Footwear,34282.4,25497.81
+519,Accessories Product 519,Fashion,Accessories,62156.69,44541.48
+520,Women Clothing Product 520,Fashion,Women Clothing,129821.12,87452.38
+521,Women Clothing Product 521,Fashion,Women Clothing,89398.14,56652.37
+522,Accessories Product 522,Fashion,Accessories,114968.87,77491.99
+523,Men Clothing Product 523,Fashion,Men Clothing,143912.62,113390.11
+524,Women Clothing Product 524,Fashion,Women Clothing,146617.41,89532.71
+525,Footwear Product 525,Fashion,Footwear,121697.24,69950.69
+526,Men Clothing Product 526,Fashion,Men Clothing,5617.59,3649.68
+527,Women Clothing Product 527,Fashion,Women Clothing,52963.71,38051.47
+528,Accessories Product 528,Fashion,Accessories,33500.32,20266.11
+529,Accessories Product 529,Fashion,Accessories,133892.56,82210.13
+530,Footwear Product 530,Fashion,Footwear,65846.2,46566.79
+531,Women Clothing Product 531,Fashion,Women Clothing,50808.05,41943.0
+532,Accessories Product 532,Fashion,Accessories,79631.97,53487.96
+533,Footwear Product 533,Fashion,Footwear,146858.34,99955.68
+534,Accessories Product 534,Fashion,Accessories,67336.36,48918.91
+535,Women Clothing Product 535,Fashion,Women Clothing,148462.05,126034.89
+536,Footwear Product 536,Fashion,Footwear,139663.06,97905.75
+537,Footwear Product 537,Fashion,Footwear,145160.65,93683.18
+538,Women Clothing Product 538,Fashion,Women Clothing,57578.97,48620.79
+539,Footwear Product 539,Fashion,Footwear,61062.06,36110.27
+540,Men Clothing Product 540,Fashion,Men Clothing,49827.99,28198.75
+541,Accessories Product 541,Fashion,Accessories,139073.69,105891.59
+542,Accessories Product 542,Fashion,Accessories,54207.88,39894.96
+543,Footwear Product 543,Fashion,Footwear,12285.23,10298.42
+544,Women Clothing Product 544,Fashion,Women Clothing,31136.7,18832.46
+545,Men Clothing Product 545,Fashion,Men Clothing,89231.77,63555.56
+546,Footwear Product 546,Fashion,Footwear,135376.31,87637.98
+547,Men Clothing Product 547,Fashion,Men Clothing,74159.66,56357.72
+548,Men Clothing Product 548,Fashion,Men Clothing,100012.54,73011.81
+549,Women Clothing Product 549,Fashion,Women Clothing,15229.56,8757.0
+550,Men Clothing Product 550,Fashion,Men Clothing,69566.15,48853.05
+551,Accessories Product 551,Fashion,Accessories,14484.78,12252.44
+552,Men Clothing Product 552,Fashion,Men Clothing,21605.93,17103.95
+553,Accessories Product 553,Fashion,Accessories,102391.98,57973.83
+554,Women Clothing Product 554,Fashion,Women Clothing,25478.06,14194.79
+555,Footwear Product 555,Fashion,Footwear,137930.77,88901.64
+556,Footwear Product 556,Fashion,Footwear,104885.3,60303.53
+557,Women Clothing Product 557,Fashion,Women Clothing,149732.17,122464.54
+558,Women Clothing Product 558,Fashion,Women Clothing,27581.46,22626.04
+559,Footwear Product 559,Fashion,Footwear,130826.86,74290.86
+560,Women Clothing Product 560,Fashion,Women Clothing,129031.76,100369.16
+561,Men Clothing Product 561,Fashion,Men Clothing,12117.3,7068.0
+562,Women Clothing Product 562,Fashion,Women Clothing,129464.7,107345.71
+563,Footwear Product 563,Fashion,Footwear,145001.88,108229.82
+564,Footwear Product 564,Fashion,Footwear,66191.14,54090.01
+565,Footwear Product 565,Fashion,Footwear,5089.0,3230.27
+566,Accessories Product 566,Fashion,Accessories,15253.99,10416.69
+567,Women Clothing Product 567,Fashion,Women Clothing,126725.36,87327.55
+568,Men Clothing Product 568,Fashion,Men Clothing,139633.32,106468.88
+569,Footwear Product 569,Fashion,Footwear,96693.82,79679.25
+570,Men Clothing Product 570,Fashion,Men Clothing,7507.23,6341.88
+571,Footwear Product 571,Fashion,Footwear,143621.68,105793.48
+572,Footwear Product 572,Fashion,Footwear,115997.34,64223.25
+573,Men Clothing Product 573,Fashion,Men Clothing,749.73,490.67
+574,Men Clothing Product 574,Fashion,Men Clothing,131779.55,89415.39
+575,Footwear Product 575,Fashion,Footwear,9942.1,7087.01
+576,Men Clothing Product 576,Fashion,Men Clothing,143325.14,121417.28
+577,Footwear Product 577,Fashion,Footwear,132110.87,97098.83
+578,Women Clothing Product 578,Fashion,Women Clothing,143988.7,94708.89
+579,Women Clothing Product 579,Fashion,Women Clothing,136422.59,103109.2
+580,Footwear Product 580,Fashion,Footwear,22232.24,14637.79
+581,Men Clothing Product 581,Fashion,Men Clothing,5278.67,3548.68
+582,Accessories Product 582,Fashion,Accessories,85538.35,61868.41
+583,Men Clothing Product 583,Fashion,Men Clothing,59848.18,40609.5
+584,Men Clothing Product 584,Fashion,Men Clothing,11331.06,7547.13
+585,Accessories Product 585,Fashion,Accessories,71781.85,40429.45
+586,Women Clothing Product 586,Fashion,Women Clothing,149418.55,104635.74
+587,Women Clothing Product 587,Fashion,Women Clothing,107583.47,90039.3
+588,Women Clothing Product 588,Fashion,Women Clothing,85670.32,54545.68
+589,Footwear Product 589,Fashion,Footwear,129324.64,71924.33
+590,Accessories Product 590,Fashion,Accessories,73769.24,48915.87
+591,Women Clothing Product 591,Fashion,Women Clothing,50325.89,27800.78
+592,Women Clothing Product 592,Fashion,Women Clothing,95042.6,75894.62
+593,Men Clothing Product 593,Fashion,Men Clothing,74136.57,62690.66
+594,Footwear Product 594,Fashion,Footwear,38489.05,31547.67
+595,Women Clothing Product 595,Fashion,Women Clothing,43094.6,29641.05
+596,Footwear Product 596,Fashion,Footwear,27810.41,15805.89
+597,Women Clothing Product 597,Fashion,Women Clothing,99325.27,71693.44
+598,Women Clothing Product 598,Fashion,Women Clothing,33059.62,20377.84
+599,Footwear Product 599,Fashion,Footwear,128444.92,73332.18
+600,Men Clothing Product 600,Fashion,Men Clothing,85826.26,63764.22
+601,Football Product 601,Sports,Football,125887.86,70990.49
+602,Outdoor Product 602,Sports,Outdoor,1141.1,889.25
+603,Football Product 603,Sports,Football,76712.38,47783.58
+604,Outdoor Product 604,Sports,Outdoor,132993.85,77800.67
+605,Football Product 605,Sports,Football,59069.54,36385.85
+606,Outdoor Product 606,Sports,Outdoor,92555.07,51085.64
+607,Cricket Product 607,Sports,Cricket,143665.86,118820.13
+608,Football Product 608,Sports,Football,50312.22,40900.67
+609,Football Product 609,Sports,Football,48694.66,35044.48
+610,Outdoor Product 610,Sports,Outdoor,13432.71,9779.36
+611,Football Product 611,Sports,Football,46959.23,31395.65
+612,Outdoor Product 612,Sports,Outdoor,143001.71,88958.62
+613,Outdoor Product 613,Sports,Outdoor,119661.72,97574.95
+614,Outdoor Product 614,Sports,Outdoor,68798.7,45139.99
+615,Outdoor Product 615,Sports,Outdoor,11937.33,8219.84
+616,Football Product 616,Sports,Football,133522.24,101272.74
+617,Outdoor Product 617,Sports,Outdoor,464.28,317.32
+618,Fitness Product 618,Sports,Fitness,120232.62,96493.42
+619,Outdoor Product 619,Sports,Outdoor,107140.03,76628.61
+620,Outdoor Product 620,Sports,Outdoor,28600.06,21739.68
+621,Outdoor Product 621,Sports,Outdoor,15116.51,11920.55
+622,Outdoor Product 622,Sports,Outdoor,10408.52,8556.55
+623,Fitness Product 623,Sports,Fitness,78481.42,64586.93
+624,Fitness Product 624,Sports,Fitness,103053.4,74163.72
+625,Football Product 625,Sports,Football,16230.48,9472.42
+626,Football Product 626,Sports,Football,31951.97,21133.94
+627,Fitness Product 627,Sports,Fitness,109630.4,89262.98
+628,Football Product 628,Sports,Football,103633.03,71624.26
+629,Fitness Product 629,Sports,Fitness,57443.45,40499.31
+630,Fitness Product 630,Sports,Fitness,112636.74,88074.95
+631,Outdoor Product 631,Sports,Outdoor,71968.91,56112.46
+632,Outdoor Product 632,Sports,Outdoor,10355.16,8736.93
+633,Outdoor Product 633,Sports,Outdoor,76425.49,55375.26
+634,Outdoor Product 634,Sports,Outdoor,120614.76,76329.04
+635,Cricket Product 635,Sports,Cricket,129975.03,97118.25
+636,Outdoor Product 636,Sports,Outdoor,25467.77,19768.03
+637,Outdoor Product 637,Sports,Outdoor,482.51,291.09
+638,Outdoor Product 638,Sports,Outdoor,92371.77,65675.99
+639,Outdoor Product 639,Sports,Outdoor,20549.96,17131.56
+640,Fitness Product 640,Sports,Fitness,38018.71,24074.48
+641,Football Product 641,Sports,Football,148114.23,110559.88
+642,Outdoor Product 642,Sports,Outdoor,138705.85,112084.91
+643,Fitness Product 643,Sports,Fitness,10186.04,8578.49
+644,Cricket Product 644,Sports,Cricket,86717.97,66179.86
+645,Fitness Product 645,Sports,Fitness,101067.0,77893.93
+646,Fitness Product 646,Sports,Fitness,19398.83,14359.27
+647,Fitness Product 647,Sports,Fitness,41766.63,31923.0
+648,Outdoor Product 648,Sports,Outdoor,33086.92,19500.11
+649,Football Product 649,Sports,Football,74854.65,60268.92
+650,Outdoor Product 650,Sports,Outdoor,104409.25,60658.71
+651,Cricket Product 651,Sports,Cricket,107762.49,60608.71
+652,Outdoor Product 652,Sports,Outdoor,75649.72,51092.2
+653,Fitness Product 653,Sports,Fitness,61251.55,40962.7
+654,Fitness Product 654,Sports,Fitness,102422.64,81678.32
+655,Cricket Product 655,Sports,Cricket,107372.52,78216.72
+656,Football Product 656,Sports,Football,68700.63,45119.67
+657,Fitness Product 657,Sports,Fitness,91782.46,56654.88
+658,Fitness Product 658,Sports,Fitness,102662.91,76538.11
+659,Fitness Product 659,Sports,Fitness,62531.87,50965.86
+660,Fitness Product 660,Sports,Fitness,70610.57,46845.6
+661,Fitness Product 661,Sports,Fitness,129131.91,77186.84
+662,Outdoor Product 662,Sports,Outdoor,18163.95,14268.64
+663,Cricket Product 663,Sports,Cricket,37416.84,31415.49
+664,Cricket Product 664,Sports,Cricket,10312.06,6869.17
+665,Outdoor Product 665,Sports,Outdoor,22880.11,13141.14
+666,Outdoor Product 666,Sports,Outdoor,140851.23,95206.96
+667,Fitness Product 667,Sports,Fitness,75312.76,49711.52
+668,Cricket Product 668,Sports,Cricket,145335.2,98145.62
+669,Football Product 669,Sports,Football,69237.54,53724.38
+670,Fitness Product 670,Sports,Fitness,57659.76,43828.79
+671,Outdoor Product 671,Sports,Outdoor,12891.67,9071.14
+672,Football Product 672,Sports,Football,54499.0,30962.7
+673,Cricket Product 673,Sports,Cricket,116886.8,91752.25
+674,Cricket Product 674,Sports,Cricket,98507.25,67210.77
+675,Football Product 675,Sports,Football,58909.98,35870.53
+676,Cricket Product 676,Sports,Cricket,90817.48,55087.1
+677,Outdoor Product 677,Sports,Outdoor,85262.67,55688.2
+678,Cricket Product 678,Sports,Cricket,97189.32,64444.16
+679,Football Product 679,Sports,Football,28708.98,23080.67
+680,Football Product 680,Sports,Football,20463.04,16669.59
+681,Fitness Product 681,Sports,Fitness,13542.41,11383.71
+682,Cricket Product 682,Sports,Cricket,32701.39,22017.21
+683,Outdoor Product 683,Sports,Outdoor,137969.38,106464.51
+684,Cricket Product 684,Sports,Cricket,40203.29,23936.7
+685,Fitness Product 685,Sports,Fitness,80210.0,55978.37
+686,Fitness Product 686,Sports,Fitness,111063.82,92082.07
+687,Outdoor Product 687,Sports,Outdoor,96028.66,73683.41
+688,Fitness Product 688,Sports,Fitness,98804.85,71264.79
+689,Football Product 689,Sports,Football,39771.36,24272.62
+690,Cricket Product 690,Sports,Cricket,120808.19,98604.67
+691,Cricket Product 691,Sports,Cricket,142101.03,119682.1
+692,Outdoor Product 692,Sports,Outdoor,133377.82,100035.12
+693,Cricket Product 693,Sports,Cricket,79884.82,49326.79
+694,Cricket Product 694,Sports,Cricket,142400.51,118877.25
+695,Fitness Product 695,Sports,Fitness,121394.85,75539.85
+696,Fitness Product 696,Sports,Fitness,106048.95,69966.15
+697,Football Product 697,Sports,Football,61028.47,40410.53
+698,Cricket Product 698,Sports,Cricket,55658.3,38408.2
+699,Football Product 699,Sports,Football,137445.8,98839.29
+700,Cricket Product 700,Sports,Cricket,75057.11,59206.54
+701,Football Product 701,Sports,Football,88147.93,72146.82
+702,Cricket Product 702,Sports,Cricket,108345.33,90232.42
+703,Cricket Product 703,Sports,Cricket,142064.32,93499.32
+704,Outdoor Product 704,Sports,Outdoor,65656.94,47226.73
+705,Cricket Product 705,Sports,Cricket,59136.21,49045.09
+706,Football Product 706,Sports,Football,144352.59,82147.4
+707,Outdoor Product 707,Sports,Outdoor,135919.93,79913.03
+708,Outdoor Product 708,Sports,Outdoor,51685.66,34163.28
+709,Fitness Product 709,Sports,Fitness,86031.17,71198.36
+710,Cricket Product 710,Sports,Cricket,76354.42,60658.23
+711,Outdoor Product 711,Sports,Outdoor,114134.55,83179.36
+712,Cricket Product 712,Sports,Cricket,118043.15,78069.57
+713,Football Product 713,Sports,Football,59742.11,47989.16
+714,Outdoor Product 714,Sports,Outdoor,17192.4,14214.53
+715,Fitness Product 715,Sports,Fitness,68144.09,57530.73
+716,Outdoor Product 716,Sports,Outdoor,36167.72,28322.07
+717,Fitness Product 717,Sports,Fitness,40074.55,26667.28
+718,Cricket Product 718,Sports,Cricket,8180.08,6137.59
+719,Cricket Product 719,Sports,Cricket,97704.57,70841.32
+720,Outdoor Product 720,Sports,Outdoor,118957.99,71044.56
+721,Football Product 721,Sports,Football,122541.73,78463.38
+722,Cricket Product 722,Sports,Cricket,132953.79,81639.91
+723,Fitness Product 723,Sports,Fitness,68084.94,45875.28
+724,Football Product 724,Sports,Football,34133.02,28614.23
+725,Fitness Product 725,Sports,Fitness,4789.15,3561.62
+726,Fitness Product 726,Sports,Fitness,74503.66,52841.65
+727,Cricket Product 727,Sports,Cricket,137986.96,81774.75
+728,Fitness Product 728,Sports,Fitness,12186.3,9370.86
+729,Football Product 729,Sports,Football,14129.0,11723.67
+730,Cricket Product 730,Sports,Cricket,47954.85,29383.59
+731,Cricket Product 731,Sports,Cricket,110946.92,66886.07
+732,Football Product 732,Sports,Football,39186.31,31476.11
+733,Football Product 733,Sports,Football,7576.83,5297.46
+734,Outdoor Product 734,Sports,Outdoor,130493.14,108325.96
+735,Fitness Product 735,Sports,Fitness,103817.7,69898.03
+736,Cricket Product 736,Sports,Cricket,131334.22,104556.06
+737,Outdoor Product 737,Sports,Outdoor,135769.11,93523.16
+738,Outdoor Product 738,Sports,Outdoor,86722.52,58112.02
+739,Cricket Product 739,Sports,Cricket,61188.62,37232.89
+740,Fitness Product 740,Sports,Fitness,16987.83,13986.22
+741,Fitness Product 741,Sports,Fitness,138772.56,102523.77
+742,Cricket Product 742,Sports,Cricket,122349.08,97157.58
+743,Fitness Product 743,Sports,Fitness,3980.62,3307.16
+744,Cricket Product 744,Sports,Cricket,97466.85,72855.07
+745,Fitness Product 745,Sports,Fitness,5744.07,4745.94
+746,Football Product 746,Sports,Football,128493.33,77539.87
+747,Outdoor Product 747,Sports,Outdoor,10137.17,6142.04
+748,Football Product 748,Sports,Football,99486.44,82932.78
+749,Fitness Product 749,Sports,Fitness,63985.77,46790.53
+750,Outdoor Product 750,Sports,Outdoor,145158.63,109985.23
+751,Fitness Product 751,Sports,Fitness,115455.14,71037.82
+752,Football Product 752,Sports,Football,79504.26,58695.13
+753,Fitness Product 753,Sports,Fitness,74308.26,44536.17
+754,Fitness Product 754,Sports,Fitness,30009.38,18288.76
+755,Cricket Product 755,Sports,Cricket,52854.34,31514.53
+756,Football Product 756,Sports,Football,26648.74,20419.7
+757,Outdoor Product 757,Sports,Outdoor,86469.34,63931.13
+758,Football Product 758,Sports,Football,117678.73,76866.67
+759,Cricket Product 759,Sports,Cricket,144964.12,95049.3
+760,Outdoor Product 760,Sports,Outdoor,136458.83,81125.81
+761,Outdoor Product 761,Sports,Outdoor,96098.51,75077.67
+762,Football Product 762,Sports,Football,34257.86,25172.15
+763,Outdoor Product 763,Sports,Outdoor,513.2,338.24
+764,Football Product 764,Sports,Football,103771.13,82860.38
+765,Outdoor Product 765,Sports,Outdoor,117344.25,72477.74
+766,Outdoor Product 766,Sports,Outdoor,63657.06,36674.89
+767,Cricket Product 767,Sports,Cricket,145807.33,100732.85
+768,Fitness Product 768,Sports,Fitness,136137.48,97388.41
+769,Football Product 769,Sports,Football,7120.58,4316.72
+770,Football Product 770,Sports,Football,118250.46,69322.91
+771,Outdoor Product 771,Sports,Outdoor,124515.81,75951.03
+772,Fitness Product 772,Sports,Fitness,15070.94,10510.74
+773,Outdoor Product 773,Sports,Outdoor,59644.93,39142.95
+774,Outdoor Product 774,Sports,Outdoor,133974.38,96124.31
+775,Outdoor Product 775,Sports,Outdoor,106001.22,88945.33
+776,Football Product 776,Sports,Football,100033.23,80281.1
+777,Football Product 777,Sports,Football,138479.52,107822.02
+778,Cricket Product 778,Sports,Cricket,116968.8,81122.88
+779,Cricket Product 779,Sports,Cricket,66559.65,41852.49
+780,Outdoor Product 780,Sports,Outdoor,31710.08,26666.89
+781,Outdoor Product 781,Sports,Outdoor,147328.2,124454.24
+782,Outdoor Product 782,Sports,Outdoor,142856.92,117984.5
+783,Fitness Product 783,Sports,Fitness,95320.64,73998.79
+784,Cricket Product 784,Sports,Cricket,38287.32,22826.54
+785,Outdoor Product 785,Sports,Outdoor,107688.03,80712.31
+786,Outdoor Product 786,Sports,Outdoor,27042.14,22647.96
+787,Football Product 787,Sports,Football,8856.84,5357.61
+788,Cricket Product 788,Sports,Cricket,31896.21,23820.95
+789,Football Product 789,Sports,Football,36563.8,29950.38
+790,Football Product 790,Sports,Football,129714.64,80863.15
+791,Fitness Product 791,Sports,Fitness,79876.42,50439.31
+792,Football Product 792,Sports,Football,41584.22,33196.76
+793,Fitness Product 793,Sports,Fitness,72989.35,47047.23
+794,Cricket Product 794,Sports,Cricket,115893.88,86452.24
+795,Cricket Product 795,Sports,Cricket,22530.02,18396.74
+796,Fitness Product 796,Sports,Fitness,33196.81,22096.13
+797,Football Product 797,Sports,Football,99266.44,69746.13
+798,Cricket Product 798,Sports,Cricket,99696.34,61689.26
+799,Football Product 799,Sports,Football,98630.59,65671.69
+800,Cricket Product 800,Sports,Cricket,109655.49,86323.68
+801,Technology Product 801,Books,Technology,54421.36,34036.65
+802,Technology Product 802,Books,Technology,119952.54,99684.76
+803,Technology Product 803,Books,Technology,55432.63,37607.48
+804,Business Product 804,Books,Business,11081.53,7977.24
+805,Business Product 805,Books,Business,49693.26,31380.59
+806,Technology Product 806,Books,Technology,86561.93,57372.6
+807,Fiction Product 807,Books,Fiction,88762.91,60825.48
+808,Education Product 808,Books,Education,53855.58,32607.34
+809,Education Product 809,Books,Education,120573.19,95658.07
+810,Technology Product 810,Books,Technology,38267.05,26036.1
+811,Fiction Product 811,Books,Fiction,100099.53,57190.48
+812,Education Product 812,Books,Education,14685.27,11288.41
+813,Technology Product 813,Books,Technology,22705.77,12987.42
+814,Fiction Product 814,Books,Fiction,85864.57,66593.93
+815,Education Product 815,Books,Education,135918.76,100048.61
+816,Education Product 816,Books,Education,79937.45,59487.84
+817,Education Product 817,Books,Education,5739.45,4800.86
+818,Education Product 818,Books,Education,32578.23,19530.39
+819,Education Product 819,Books,Education,134011.5,83006.36
+820,Fiction Product 820,Books,Fiction,20038.19,14940.68
+821,Technology Product 821,Books,Technology,69219.22,45112.63
+822,Education Product 822,Books,Education,97417.63,65864.74
+823,Fiction Product 823,Books,Fiction,126146.81,104801.61
+824,Business Product 824,Books,Business,30691.39,22428.82
+825,Education Product 825,Books,Education,49523.71,30036.77
+826,Business Product 826,Books,Business,27498.84,16153.0
+827,Technology Product 827,Books,Technology,24033.37,17444.09
+828,Business Product 828,Books,Business,126372.09,98870.83
+829,Education Product 829,Books,Education,121190.87,76554.6
+830,Business Product 830,Books,Business,84587.14,58096.85
+831,Business Product 831,Books,Business,72146.71,55068.86
+832,Technology Product 832,Books,Technology,21299.98,17901.59
+833,Education Product 833,Books,Education,59527.79,38261.85
+834,Education Product 834,Books,Education,74612.85,47701.72
+835,Education Product 835,Books,Education,89084.95,73673.89
+836,Technology Product 836,Books,Technology,63142.5,38541.67
+837,Business Product 837,Books,Business,64166.57,54360.78
+838,Business Product 838,Books,Business,128727.77,72075.69
+839,Education Product 839,Books,Education,36866.31,23757.4
+840,Fiction Product 840,Books,Fiction,70697.89,39682.06
+841,Education Product 841,Books,Education,146265.21,105239.85
+842,Fiction Product 842,Books,Fiction,144444.04,98570.61
+843,Technology Product 843,Books,Technology,132444.97,95311.35
+844,Business Product 844,Books,Business,20861.77,15829.57
+845,Fiction Product 845,Books,Fiction,48368.1,27321.38
+846,Business Product 846,Books,Business,89156.6,68267.63
+847,Fiction Product 847,Books,Fiction,55390.62,32294.76
+848,Fiction Product 848,Books,Fiction,69562.08,52333.39
+849,Education Product 849,Books,Education,45166.54,38221.48
+850,Business Product 850,Books,Business,92228.0,76074.22
+851,Business Product 851,Books,Business,91875.09,60141.83
+852,Business Product 852,Books,Business,62267.94,42366.32
+853,Business Product 853,Books,Business,145864.48,113207.72
+854,Business Product 854,Books,Business,111875.76,71848.57
+855,Business Product 855,Books,Business,117899.02,92846.91
+856,Business Product 856,Books,Business,91914.41,61459.17
+857,Fiction Product 857,Books,Fiction,113021.33,70382.61
+858,Business Product 858,Books,Business,41585.46,28497.15
+859,Fiction Product 859,Books,Fiction,86365.51,54487.29
+860,Education Product 860,Books,Education,39790.01,28161.27
+861,Fiction Product 861,Books,Fiction,22171.79,12512.06
+862,Business Product 862,Books,Business,75225.49,44269.53
+863,Education Product 863,Books,Education,108614.84,66858.72
+864,Business Product 864,Books,Business,15233.92,9099.34
+865,Technology Product 865,Books,Technology,149656.64,116444.04
+866,Education Product 866,Books,Education,19624.59,14863.3
+867,Technology Product 867,Books,Technology,129105.06,100508.95
+868,Education Product 868,Books,Education,49225.48,40353.64
+869,Business Product 869,Books,Business,29149.64,21544.18
+870,Education Product 870,Books,Education,55770.44,38581.17
+871,Fiction Product 871,Books,Fiction,128913.78,75762.41
+872,Fiction Product 872,Books,Fiction,1821.05,1166.44
+873,Education Product 873,Books,Education,127284.01,84573.92
+874,Technology Product 874,Books,Technology,22512.74,16508.18
+875,Technology Product 875,Books,Technology,123497.19,73163.51
+876,Business Product 876,Books,Business,16263.42,12744.59
+877,Fiction Product 877,Books,Fiction,110155.68,75835.72
+878,Education Product 878,Books,Education,129688.58,91901.15
+879,Education Product 879,Books,Education,28790.09,20864.32
+880,Education Product 880,Books,Education,144587.2,103613.09
+881,Education Product 881,Books,Education,145636.6,83546.53
+882,Fiction Product 882,Books,Fiction,141673.96,89017.64
+883,Business Product 883,Books,Business,83016.81,50370.1
+884,Business Product 884,Books,Business,59663.35,36775.66
+885,Technology Product 885,Books,Technology,33656.5,23984.02
+886,Business Product 886,Books,Business,7494.27,4582.08
+887,Fiction Product 887,Books,Fiction,28816.91,19371.27
+888,Fiction Product 888,Books,Fiction,5312.78,3318.35
+889,Business Product 889,Books,Business,68790.64,41613.76
+890,Education Product 890,Books,Education,31424.47,18299.55
+891,Business Product 891,Books,Business,35029.01,24002.88
+892,Education Product 892,Books,Education,75813.87,57462.66
+893,Education Product 893,Books,Education,117280.21,83513.09
+894,Technology Product 894,Books,Technology,5190.63,4087.31
+895,Business Product 895,Books,Business,106700.12,87404.03
+896,Business Product 896,Books,Business,57399.94,41601.76
+897,Technology Product 897,Books,Technology,23202.7,18362.97
+898,Technology Product 898,Books,Technology,97100.98,81728.31
+899,Education Product 899,Books,Education,133423.51,75961.12
+900,Business Product 900,Books,Business,28492.05,15991.5
+901,Fiction Product 901,Books,Fiction,126268.42,71661.57
+902,Fiction Product 902,Books,Fiction,80623.26,63483.76
+903,Business Product 903,Books,Business,142103.2,85121.36
+904,Business Product 904,Books,Business,63492.01,41365.18
+905,Education Product 905,Books,Education,112815.49,86749.45
+906,Fiction Product 906,Books,Fiction,30085.86,17751.95
+907,Fiction Product 907,Books,Fiction,93654.19,58077.95
+908,Fiction Product 908,Books,Fiction,2731.38,1772.82
+909,Technology Product 909,Books,Technology,32564.28,26485.98
+910,Fiction Product 910,Books,Fiction,3588.39,2185.98
+911,Education Product 911,Books,Education,70426.37,40165.3
+912,Technology Product 912,Books,Technology,100648.03,68272.87
+913,Education Product 913,Books,Education,54970.46,43686.98
+914,Education Product 914,Books,Education,128428.65,76106.6
+915,Education Product 915,Books,Education,91567.98,59904.87
+916,Business Product 916,Books,Business,37593.78,29117.05
+917,Fiction Product 917,Books,Fiction,41915.7,27708.73
+918,Technology Product 918,Books,Technology,12012.81,9863.16
+919,Fiction Product 919,Books,Fiction,110287.0,79057.98
+920,Business Product 920,Books,Business,122464.89,73624.45
+921,Technology Product 921,Books,Technology,32752.69,25056.52
+922,Fiction Product 922,Books,Fiction,7286.01,5188.04
+923,Education Product 923,Books,Education,10494.78,8833.05
+924,Technology Product 924,Books,Technology,13902.79,10639.94
+925,Fiction Product 925,Books,Fiction,99389.03,58611.78
+926,Technology Product 926,Books,Technology,132197.68,75028.38
+927,Education Product 927,Books,Education,137468.89,86286.89
+928,Education Product 928,Books,Education,109528.2,91733.42
+929,Education Product 929,Books,Education,96436.31,73030.75
+930,Business Product 930,Books,Business,123778.59,83448.55
+931,Fiction Product 931,Books,Fiction,138871.2,78464.16
+932,Business Product 932,Books,Business,96080.87,59398.83
+933,Education Product 933,Books,Education,23366.7,17601.94
+934,Fiction Product 934,Books,Fiction,51119.92,41492.15
+935,Technology Product 935,Books,Technology,27227.84,17561.89
+936,Technology Product 936,Books,Technology,120458.87,87390.5
+937,Business Product 937,Books,Business,57976.02,45074.9
+938,Business Product 938,Books,Business,106977.95,88198.77
+939,Fiction Product 939,Books,Fiction,142089.0,98842.84
+940,Fiction Product 940,Books,Fiction,67870.02,52994.7
+941,Technology Product 941,Books,Technology,119226.05,69141.44
+942,Technology Product 942,Books,Technology,13167.12,7428.15
+943,Education Product 943,Books,Education,144911.74,81525.76
+944,Business Product 944,Books,Business,147383.28,105502.8
+945,Technology Product 945,Books,Technology,100540.56,82167.44
+946,Technology Product 946,Books,Technology,68325.87,38593.53
+947,Education Product 947,Books,Education,43914.8,24628.13
+948,Fiction Product 948,Books,Fiction,89860.16,58926.39
+949,Business Product 949,Books,Business,104258.41,62915.87
+950,Business Product 950,Books,Business,110362.23,90410.94
+951,Technology Product 951,Books,Technology,74250.56,44683.92
+952,Fiction Product 952,Books,Fiction,135825.81,113224.93
+953,Business Product 953,Books,Business,37691.07,27034.56
+954,Fiction Product 954,Books,Fiction,24783.4,16312.8
+955,Business Product 955,Books,Business,22703.13,13256.27
+956,Fiction Product 956,Books,Fiction,56719.56,36649.39
+957,Business Product 957,Books,Business,88788.06,66041.86
+958,Fiction Product 958,Books,Fiction,136343.11,105258.43
+959,Technology Product 959,Books,Technology,103945.7,82630.2
+960,Fiction Product 960,Books,Fiction,146431.45,93471.34
+961,Education Product 961,Books,Education,131618.2,105301.69
+962,Business Product 962,Books,Business,75479.84,53256.27
+963,Business Product 963,Books,Business,2058.01,1418.77
+964,Fiction Product 964,Books,Fiction,1845.56,1222.24
+965,Education Product 965,Books,Education,114963.5,86832.67
+966,Technology Product 966,Books,Technology,91927.99,74690.28
+967,Fiction Product 967,Books,Fiction,118267.02,80948.87
+968,Business Product 968,Books,Business,93699.93,76940.02
+969,Education Product 969,Books,Education,64242.66,48013.67
+970,Fiction Product 970,Books,Fiction,142160.01,103680.11
+971,Business Product 971,Books,Business,62292.99,39269.64
+972,Education Product 972,Books,Education,138215.9,95679.9
+973,Fiction Product 973,Books,Fiction,24254.69,15950.07
+974,Fiction Product 974,Books,Fiction,2925.27,1679.59
+975,Education Product 975,Books,Education,52588.67,30244.51
+976,Fiction Product 976,Books,Fiction,4458.21,2945.39
+977,Fiction Product 977,Books,Fiction,22891.13,14553.06
+978,Technology Product 978,Books,Technology,48590.27,39329.24
+979,Education Product 979,Books,Education,32989.44,19644.9
+980,Business Product 980,Books,Business,47575.95,35655.9
+981,Education Product 981,Books,Education,35118.93,21889.95
+982,Fiction Product 982,Books,Fiction,96969.16,58347.13
+983,Business Product 983,Books,Business,99712.82,83378.52
+984,Technology Product 984,Books,Technology,64890.23,37169.08
+985,Business Product 985,Books,Business,93638.31,52261.45
+986,Business Product 986,Books,Business,14835.28,9070.72
+987,Technology Product 987,Books,Technology,33688.38,23969.04
+988,Technology Product 988,Books,Technology,6828.33,4931.21
+989,Fiction Product 989,Books,Fiction,105744.56,63141.15
+990,Technology Product 990,Books,Technology,26764.0,15939.35
+991,Fiction Product 991,Books,Fiction,117382.01,77663.92
+992,Business Product 992,Books,Business,76850.86,63287.37
+993,Technology Product 993,Books,Technology,106770.95,75967.31
+994,Education Product 994,Books,Education,81652.95,58033.66
+995,Education Product 995,Books,Education,44903.75,24810.71
+996,Technology Product 996,Books,Technology,79766.49,50144.66
+997,Technology Product 997,Books,Technology,58602.67,49615.75
+998,Fiction Product 998,Books,Fiction,125624.6,94484.25
+999,Technology Product 999,Books,Technology,119253.49,71945.44
+1000,Education Product 1000,Books,Education,66503.95,47039.92
